@@ -8,7 +8,6 @@
 
 import UIKit
 import MapKit
-import AVFoundation
 
 class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDelegate {
     let locationManager: CLLocationManager = CLLocationManager() // the object that provides us the location data
@@ -56,8 +55,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
         self.locationManager.startUpdatingLocation()
         // continuously send the application a stream of location data
     }
+    
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
         let newLocation = locations.last!
         mapView.setCenterCoordinate(newLocation.coordinate, animated: true)
         let viewRegion = MKCoordinateRegionMakeWithDistance(newLocation.coordinate, 500, 500)
@@ -65,19 +64,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
         manager.stopUpdatingLocation()
     }
     
-    
-
-    func delay(delay:Double, closure:()->()) {
-        dispatch_after(
-            dispatch_time(
-                DISPATCH_TIME_NOW,
-                Int64(delay * Double(NSEC_PER_SEC))
-            ),
-            dispatch_get_main_queue(), closure)
-    }
-    
-    func addStore(coordinate:CLLocationCoordinate2D,title:String)
-    {
+    func addStore(coordinate:CLLocationCoordinate2D,title:String) {
         let storePin = CustomPin(title: title, locationName: "", discipline: "", coordinate: coordinate)
         storePins.append(storePin)
         mapView.addAnnotation(storePin)

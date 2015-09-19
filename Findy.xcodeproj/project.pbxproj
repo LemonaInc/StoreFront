@@ -18,8 +18,6 @@
 		4BBCB3F71BADFDA000A58FD9 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCB3ED1BADFDA000A58FD9 /* ParentViewController.m */; };
 		4BBCB3F81BADFDA000A58FD9 /* SiteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCB3EF1BADFDA000A58FD9 /* SiteDetailViewController.m */; };
 		4BBCB3F91BADFDA000A58FD9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCB3F11BADFDA000A58FD9 /* LoginViewController.m */; };
-		EA4C77C51BAD5754003B5147 /* hangers.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77C41BAD5754003B5147 /* hangers.jpeg */; };
-		EA4C77C71BAD58E4003B5147 /* lolgo.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77C61BAD58E4003B5147 /* lolgo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +58,7 @@
 		4BBCB3EF1BADFDA000A58FD9 /* SiteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteDetailViewController.m; sourceTree = "<group>"; };
 		4BBCB3F01BADFDA000A58FD9 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		4BBCB3F11BADFDA000A58FD9 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		EA4C77C41BAD5754003B5147 /* hangers.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hangers.jpeg; sourceTree = "<group>"; };
-		EA4C77C61BAD58E4003B5147 /* lolgo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lolgo.png; sourceTree = "<group>"; };
-		EADD3FDE1BADA99500BC3EF6 /* Findy-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Findy-Bridging-Header.h"; sourceTree = "<group>"; };
+		EADD3FDE1BADA99500BC3EF6 /* Findy-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Findy-Bridging-Header.h"; path = "../Findy-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,11 +122,10 @@
 				4B9FA6851BAD4887009BD71C /* AppDelegate.swift */,
 				4BBCB3E91BADFDA000A58FD9 /* Login */,
 				4B9FA6871BAD4887009BD71C /* ViewController.swift */,
-				EA4C77B51BAD566D003B5147 /* Objective C Files */,
-				4B9FA68C1BAD4887009BD71C /* Assets.xcassets */,
-				4B9FA6911BAD4887009BD71C /* Info.plist */,
 				1D1B57131BADABD70039DD42 /* Main.storyboard */,
 				4B9FA68E1BAD4887009BD71C /* LaunchScreen.storyboard */,
+				4B9FA68C1BAD4887009BD71C /* Assets.xcassets */,
+				4B9FA6911BAD4887009BD71C /* Info.plist */,
 			);
 			path = Findy;
 			sourceTree = "<group>";
@@ -162,18 +157,9 @@
 				4BBCB3EF1BADFDA000A58FD9 /* SiteDetailViewController.m */,
 				4BBCB3F01BADFDA000A58FD9 /* LoginViewController.h */,
 				4BBCB3F11BADFDA000A58FD9 /* LoginViewController.m */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		EA4C77B51BAD566D003B5147 /* Objective C Files */ = {
-			isa = PBXGroup;
-			children = (
-				EA4C77C61BAD58E4003B5147 /* lolgo.png */,
-				EA4C77C41BAD5754003B5147 /* hangers.jpeg */,
 				EADD3FDE1BADA99500BC3EF6 /* Findy-Bridging-Header.h */,
 			);
-			name = "Objective C Files";
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,11 +272,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA4C77C71BAD58E4003B5147 /* lolgo.png in Resources */,
 				4B9FA6901BAD4887009BD71C /* LaunchScreen.storyboard in Resources */,
 				1D1B57141BADABD70039DD42 /* Main.storyboard in Resources */,
 				4B9FA68D1BAD4887009BD71C /* Assets.xcassets in Resources */,
-				EA4C77C51BAD5754003B5147 /* hangers.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
