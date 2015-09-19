@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D1B57141BADABD70039DD42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D1B57131BADABD70039DD42 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		1D1B57141BADABD70039DD42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D1B57131BADABD70039DD42 /* Main.storyboard */; };
 		1D368D9E1BAD8E2B00EACFC8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D368D9D1BAD8E2B00EACFC8 /* MapKit.framework */; };
 		4B9FA6861BAD4887009BD71C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9FA6851BAD4887009BD71C /* AppDelegate.swift */; };
 		4B9FA6881BAD4887009BD71C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9FA6871BAD4887009BD71C /* ViewController.swift */; };
@@ -15,19 +15,12 @@
 		4B9FA6901BAD4887009BD71C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9FA68E1BAD4887009BD71C /* LaunchScreen.storyboard */; };
 		4B9FA69B1BAD4887009BD71C /* FindyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9FA69A1BAD4887009BD71C /* FindyTests.swift */; };
 		4B9FA6A61BAD4887009BD71C /* FindyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9FA6A51BAD4887009BD71C /* FindyUITests.swift */; };
-		4BBCB3F51BADFDA000A58FD9 /* Locat.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BBCB3EA1BADFDA000A58FD9 /* Locat.xib */; settings = {ASSET_TAGS = (); }; };
-		4BBCB3F61BADFDA000A58FD9 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BBCB3EB1BADFDA000A58FD9 /* Login.storyboard */; settings = {ASSET_TAGS = (); }; };
-		4BBCB3F71BADFDA000A58FD9 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCB3ED1BADFDA000A58FD9 /* ParentViewController.m */; settings = {ASSET_TAGS = (); }; };
-		4BBCB3F81BADFDA000A58FD9 /* SiteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCB3EF1BADFDA000A58FD9 /* SiteDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
-		4BBCB3F91BADFDA000A58FD9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCB3F11BADFDA000A58FD9 /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
-		4BBCB3FB1BADFDA000A58FD9 /* hangers.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4BBCB3F41BADFDA000A58FD9 /* hangers.jpeg */; settings = {ASSET_TAGS = (); }; };
-		BDECD4278840E9D6B4420B1A /* libPods-Findy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D272E6127A39DAB214D3D406 /* libPods-Findy.a */; };
-		EA4C77BD1BAD5686003B5147 /* ItemList.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77B61BAD5686003B5147 /* ItemList.xib */; };
-		EA4C77BE1BAD5686003B5147 /* MyOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77B71BAD5686003B5147 /* MyOrderCell.xib */; };
-		EA4C77BF1BAD5686003B5147 /* ItemListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77B81BAD5686003B5147 /* ItemListCell.xib */; };
-		EA4C77C11BAD5686003B5147 /* MyOrder.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77BA1BAD5686003B5147 /* MyOrder.xib */; };
-		EA4C77C21BAD5686003B5147 /* OrderForm.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77BB1BAD5686003B5147 /* OrderForm.xib */; };
-		EA4C77C31BAD5686003B5147 /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77BC1BAD5686003B5147 /* Home.xib */; };
+		4BBCB3F51BADFDA000A58FD9 /* Locat.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BBCB3EA1BADFDA000A58FD9 /* Locat.xib */; };
+		4BBCB3F61BADFDA000A58FD9 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BBCB3EB1BADFDA000A58FD9 /* Login.storyboard */; };
+		4BBCB3F71BADFDA000A58FD9 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCB3ED1BADFDA000A58FD9 /* ParentViewController.m */; };
+		4BBCB3F81BADFDA000A58FD9 /* SiteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCB3EF1BADFDA000A58FD9 /* SiteDetailViewController.m */; };
+		4BBCB3F91BADFDA000A58FD9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCB3F11BADFDA000A58FD9 /* LoginViewController.m */; };
+		4BBCB3FB1BADFDA000A58FD9 /* hangers.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4BBCB3F41BADFDA000A58FD9 /* hangers.jpeg */; };
 		EA4C77C51BAD5754003B5147 /* hangers.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77C41BAD5754003B5147 /* hangers.jpeg */; };
 		EA4C77C71BAD58E4003B5147 /* lolgo.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77C61BAD58E4003B5147 /* lolgo.png */; };
 /* End PBXBuildFile section */
@@ -52,7 +45,6 @@
 /* Begin PBXFileReference section */
 		1D1B57131BADABD70039DD42 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1D368D9D1BAD8E2B00EACFC8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		2DD8502462983585A75D0B76 /* Pods-Findy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Findy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Findy/Pods-Findy.release.xcconfig"; sourceTree = "<group>"; };
 		4B9FA6821BAD4887009BD71C /* Findy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Findy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B9FA6851BAD4887009BD71C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B9FA6871BAD4887009BD71C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,14 +66,6 @@
 		4BBCB3F01BADFDA000A58FD9 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		4BBCB3F11BADFDA000A58FD9 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		4BBCB3F41BADFDA000A58FD9 /* hangers.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hangers.jpeg; sourceTree = "<group>"; };
-		CED6CC7CC462EC5D98C67496 /* Pods-Findy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Findy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Findy/Pods-Findy.debug.xcconfig"; sourceTree = "<group>"; };
-		D272E6127A39DAB214D3D406 /* libPods-Findy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Findy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA4C77B61BAD5686003B5147 /* ItemList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemList.xib; sourceTree = "<group>"; };
-		EA4C77B71BAD5686003B5147 /* MyOrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyOrderCell.xib; sourceTree = "<group>"; };
-		EA4C77B81BAD5686003B5147 /* ItemListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemListCell.xib; sourceTree = "<group>"; };
-		EA4C77BA1BAD5686003B5147 /* MyOrder.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyOrder.xib; sourceTree = "<group>"; };
-		EA4C77BB1BAD5686003B5147 /* OrderForm.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderForm.xib; sourceTree = "<group>"; };
-		EA4C77BC1BAD5686003B5147 /* Home.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Home.xib; sourceTree = "<group>"; };
 		EA4C77C41BAD5754003B5147 /* hangers.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hangers.jpeg; sourceTree = "<group>"; };
 		EA4C77C61BAD58E4003B5147 /* lolgo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lolgo.png; sourceTree = "<group>"; };
 		EADD3FDE1BADA99500BC3EF6 /* Findy-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Findy-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -93,7 +77,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D368D9E1BAD8E2B00EACFC8 /* MapKit.framework in Frameworks */,
-				BDECD4278840E9D6B4420B1A /* libPods-Findy.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				1D368D9D1BAD8E2B00EACFC8 /* MapKit.framework */,
-				D272E6127A39DAB214D3D406 /* libPods-Findy.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -131,7 +113,6 @@
 				4B9FA6A41BAD4887009BD71C /* FindyUITests */,
 				4B9FA6831BAD4887009BD71C /* Products */,
 				2CDA56F405C58E432B7191D2 /* Frameworks */,
-				981D6831381504C5D7FCD163 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,24 +175,9 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		981D6831381504C5D7FCD163 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CED6CC7CC462EC5D98C67496 /* Pods-Findy.debug.xcconfig */,
-				2DD8502462983585A75D0B76 /* Pods-Findy.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		EA4C77B51BAD566D003B5147 /* Objective C Files */ = {
 			isa = PBXGroup;
 			children = (
-				EA4C77B61BAD5686003B5147 /* ItemList.xib */,
-				EA4C77B71BAD5686003B5147 /* MyOrderCell.xib */,
-				EA4C77B81BAD5686003B5147 /* ItemListCell.xib */,
-				EA4C77BA1BAD5686003B5147 /* MyOrder.xib */,
-				EA4C77BB1BAD5686003B5147 /* OrderForm.xib */,
-				EA4C77BC1BAD5686003B5147 /* Home.xib */,
 				EA4C77C61BAD58E4003B5147 /* lolgo.png */,
 				EA4C77C41BAD5754003B5147 /* hangers.jpeg */,
 				EADD3FDE1BADA99500BC3EF6 /* Findy-Bridging-Header.h */,
@@ -226,11 +192,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B9FA6AA1BAD4887009BD71C /* Build configuration list for PBXNativeTarget "Findy" */;
 			buildPhases = (
-				2BBAFC7376099ACC8DD8B8BC /* Check Pods Manifest.lock */,
 				4B9FA67E1BAD4887009BD71C /* Sources */,
 				4B9FA67F1BAD4887009BD71C /* Frameworks */,
 				4B9FA6801BAD4887009BD71C /* Resources */,
-				6609077F6EC623D5D03AEA12 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -331,20 +295,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA4C77BF1BAD5686003B5147 /* ItemListCell.xib in Resources */,
 				EA4C77C71BAD58E4003B5147 /* lolgo.png in Resources */,
 				4BBCB3F61BADFDA000A58FD9 /* Login.storyboard in Resources */,
 				4B9FA6901BAD4887009BD71C /* LaunchScreen.storyboard in Resources */,
 				1D1B57141BADABD70039DD42 /* Main.storyboard in Resources */,
 				4B9FA68D1BAD4887009BD71C /* Assets.xcassets in Resources */,
-				EA4C77BD1BAD5686003B5147 /* ItemList.xib in Resources */,
 				4BBCB3FB1BADFDA000A58FD9 /* hangers.jpeg in Resources */,
 				4BBCB3F51BADFDA000A58FD9 /* Locat.xib in Resources */,
-				EA4C77C31BAD5686003B5147 /* Home.xib in Resources */,
 				EA4C77C51BAD5754003B5147 /* hangers.jpeg in Resources */,
-				EA4C77C21BAD5686003B5147 /* OrderForm.xib in Resources */,
-				EA4C77C11BAD5686003B5147 /* MyOrder.xib in Resources */,
-				EA4C77BE1BAD5686003B5147 /* MyOrderCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,39 +321,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2BBAFC7376099ACC8DD8B8BC /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		6609077F6EC623D5D03AEA12 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Findy/Pods-Findy-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4B9FA67E1BAD4887009BD71C /* Sources */ = {
@@ -538,7 +463,6 @@
 		};
 		4B9FA6AB1BAD4887009BD71C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CED6CC7CC462EC5D98C67496 /* Pods-Findy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -555,7 +479,6 @@
 		};
 		4B9FA6AC1BAD4887009BD71C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DD8502462983585A75D0B76 /* Pods-Findy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

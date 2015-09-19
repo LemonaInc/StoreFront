@@ -15,7 +15,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
     var userLocation: CLLocation!
     
     @IBOutlet weak var mapView: MKMapView!
-//    @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var toolBar: UIToolbar!
     var searchController:UISearchController!
     var searchResultsTableViewController:UITableViewController!
@@ -30,12 +29,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
         searchController = UISearchController(searchResultsController: searchResultsTableViewController)
         
         self.navigationItem.titleView = searchController.searchBar
-        
-     
-        delay (2) {
-            self.getUserLocation(self)
-        }
-
+        self.getUserLocation(self)
         
         print("Requesting your current location...")
         getUserLocation(self)
@@ -49,31 +43,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
     
     @IBAction func tapOnGetLocation(sender: AnyObject){
         getUserLocation(self)
-//        mapView.setCenterCoordinate(mapView.userLocation.coordinate, animated: true)
     }
-//    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
-//        MKPinAnnotationView *annView=[[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"currentloc"];
-//        
-//        if([inStock isEqual:@"yes"]){
-//            annView.pinColor = MKPinAnnotationColorGreen;
-//        }
-//        if([inStock isEqual:@"no"]){
-//            annView.pinColor = MKPinAnnotationColorRed;
-//        }
-//        if([inStock isEqual:@"unknown"]){
-//            UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"greyPin.png"]];
-//            [annView addSubview:imageView];
-//        }
-//        annView.animatesDrop=TRUE;
-//        annView.canShowCallout = YES;
-//        annView.calloutOffset = CGPointMake(-5, 5);
-//        return annView;
-//        
-//        var pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "currentLoc")
-//        if
-//        
-        
-//    }
+
     func getUserLocation(sender: AnyObject) {
         locationManager.delegate = self // instantiate the CLLocationManager object
         
