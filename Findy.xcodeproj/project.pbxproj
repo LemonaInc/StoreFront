@@ -25,7 +25,6 @@
 		EA4C77BD1BAD5686003B5147 /* ItemList.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77B61BAD5686003B5147 /* ItemList.xib */; };
 		EA4C77BE1BAD5686003B5147 /* MyOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77B71BAD5686003B5147 /* MyOrderCell.xib */; };
 		EA4C77BF1BAD5686003B5147 /* ItemListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77B81BAD5686003B5147 /* ItemListCell.xib */; };
-		EA4C77C01BAD5686003B5147 /* Single Item.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77B91BAD5686003B5147 /* Single Item.xib */; };
 		EA4C77C11BAD5686003B5147 /* MyOrder.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77BA1BAD5686003B5147 /* MyOrder.xib */; };
 		EA4C77C21BAD5686003B5147 /* OrderForm.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77BB1BAD5686003B5147 /* OrderForm.xib */; };
 		EA4C77C31BAD5686003B5147 /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77BC1BAD5686003B5147 /* Home.xib */; };
@@ -80,7 +79,6 @@
 		EA4C77B61BAD5686003B5147 /* ItemList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemList.xib; sourceTree = "<group>"; };
 		EA4C77B71BAD5686003B5147 /* MyOrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyOrderCell.xib; sourceTree = "<group>"; };
 		EA4C77B81BAD5686003B5147 /* ItemListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemListCell.xib; sourceTree = "<group>"; };
-		EA4C77B91BAD5686003B5147 /* Single Item.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Single Item.xib"; sourceTree = "<group>"; };
 		EA4C77BA1BAD5686003B5147 /* MyOrder.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyOrder.xib; sourceTree = "<group>"; };
 		EA4C77BB1BAD5686003B5147 /* OrderForm.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderForm.xib; sourceTree = "<group>"; };
 		EA4C77BC1BAD5686003B5147 /* Home.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Home.xib; sourceTree = "<group>"; };
@@ -211,7 +209,6 @@
 				EA4C77B61BAD5686003B5147 /* ItemList.xib */,
 				EA4C77B71BAD5686003B5147 /* MyOrderCell.xib */,
 				EA4C77B81BAD5686003B5147 /* ItemListCell.xib */,
-				EA4C77B91BAD5686003B5147 /* Single Item.xib */,
 				EA4C77BA1BAD5686003B5147 /* MyOrder.xib */,
 				EA4C77BB1BAD5686003B5147 /* OrderForm.xib */,
 				EA4C77BC1BAD5686003B5147 /* Home.xib */,
@@ -343,7 +340,6 @@
 				EA4C77BD1BAD5686003B5147 /* ItemList.xib in Resources */,
 				4BBCB3FB1BADFDA000A58FD9 /* hangers.jpeg in Resources */,
 				4BBCB3F51BADFDA000A58FD9 /* Locat.xib in Resources */,
-				EA4C77C01BAD5686003B5147 /* Single Item.xib in Resources */,
 				EA4C77C31BAD5686003B5147 /* Home.xib in Resources */,
 				EA4C77C51BAD5754003B5147 /* hangers.jpeg in Resources */,
 				EA4C77C21BAD5686003B5147 /* OrderForm.xib in Resources */,
