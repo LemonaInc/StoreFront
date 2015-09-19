@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D1B57141BADABD70039DD42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D1B57131BADABD70039DD42 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		1D368D9E1BAD8E2B00EACFC8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D368D9D1BAD8E2B00EACFC8 /* MapKit.framework */; };
+		4B9FA6861BAD4887009BD71C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9FA6851BAD4887009BD71C /* AppDelegate.swift */; };
+		4B9FA6881BAD4887009BD71C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9FA6871BAD4887009BD71C /* ViewController.swift */; };
+		4B9FA68D1BAD4887009BD71C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B9FA68C1BAD4887009BD71C /* Assets.xcassets */; };
+		4B9FA6901BAD4887009BD71C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9FA68E1BAD4887009BD71C /* LaunchScreen.storyboard */; };
+		4B9FA69B1BAD4887009BD71C /* FindyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9FA69A1BAD4887009BD71C /* FindyTests.swift */; };
+		4B9FA6A61BAD4887009BD71C /* FindyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9FA6A51BAD4887009BD71C /* FindyUITests.swift */; };
+		4BBCB3F51BADFDA000A58FD9 /* Locat.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BBCB3EA1BADFDA000A58FD9 /* Locat.xib */; settings = {ASSET_TAGS = (); }; };
+		4BBCB3F61BADFDA000A58FD9 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BBCB3EB1BADFDA000A58FD9 /* Login.storyboard */; settings = {ASSET_TAGS = (); }; };
+		4BBCB3F71BADFDA000A58FD9 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCB3ED1BADFDA000A58FD9 /* ParentViewController.m */; settings = {ASSET_TAGS = (); }; };
+		4BBCB3F81BADFDA000A58FD9 /* SiteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCB3EF1BADFDA000A58FD9 /* SiteDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		4BBCB3F91BADFDA000A58FD9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCB3F11BADFDA000A58FD9 /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		4BBCB3FB1BADFDA000A58FD9 /* hangers.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4BBCB3F41BADFDA000A58FD9 /* hangers.jpeg */; settings = {ASSET_TAGS = (); }; };
+		BDECD4278840E9D6B4420B1A /* libPods-Findy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D272E6127A39DAB214D3D406 /* libPods-Findy.a */; };
+		EA4C77BD1BAD5686003B5147 /* ItemList.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77B61BAD5686003B5147 /* ItemList.xib */; };
+		EA4C77BE1BAD5686003B5147 /* MyOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77B71BAD5686003B5147 /* MyOrderCell.xib */; };
+		EA4C77BF1BAD5686003B5147 /* ItemListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77B81BAD5686003B5147 /* ItemListCell.xib */; };
+		EA4C77C01BAD5686003B5147 /* Single Item.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77B91BAD5686003B5147 /* Single Item.xib */; };
+		EA4C77C11BAD5686003B5147 /* MyOrder.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77BA1BAD5686003B5147 /* MyOrder.xib */; };
+		EA4C77C21BAD5686003B5147 /* OrderForm.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77BB1BAD5686003B5147 /* OrderForm.xib */; };
+		EA4C77C31BAD5686003B5147 /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77BC1BAD5686003B5147 /* Home.xib */; };
+		EA4C77C51BAD5754003B5147 /* hangers.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77C41BAD5754003B5147 /* hangers.jpeg */; };
+		EA4C77C71BAD58E4003B5147 /* lolgo.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77C61BAD58E4003B5147 /* lolgo.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B9FA6971BAD4887009BD71C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B9FA67A1BAD4887009BD71C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B9FA6811BAD4887009BD71C;
+			remoteInfo = Findy;
+		};
+		4B9FA6A21BAD4887009BD71C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B9FA67A1BAD4887009BD71C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B9FA6811BAD4887009BD71C;
+			remoteInfo = Findy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D1B57131BADABD70039DD42 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1D368D9D1BAD8E2B00EACFC8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2DD8502462983585A75D0B76 /* Pods-Findy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Findy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Findy/Pods-Findy.release.xcconfig"; sourceTree = "<group>"; };
+		4B9FA6821BAD4887009BD71C /* Findy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Findy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B9FA6851BAD4887009BD71C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B9FA6871BAD4887009BD71C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4B9FA68C1BAD4887009BD71C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B9FA68F1BAD4887009BD71C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B9FA6911BAD4887009BD71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B9FA6961BAD4887009BD71C /* FindyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B9FA69A1BAD4887009BD71C /* FindyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindyTests.swift; sourceTree = "<group>"; };
+		4B9FA69C1BAD4887009BD71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B9FA6A11BAD4887009BD71C /* FindyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B9FA6A51BAD4887009BD71C /* FindyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindyUITests.swift; sourceTree = "<group>"; };
+		4B9FA6A71BAD4887009BD71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BBCB3EA1BADFDA000A58FD9 /* Locat.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Locat.xib; sourceTree = "<group>"; };
+		4BBCB3EB1BADFDA000A58FD9 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		4BBCB3EC1BADFDA000A58FD9 /* ParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentViewController.h; sourceTree = "<group>"; };
+		4BBCB3ED1BADFDA000A58FD9 /* ParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentViewController.m; sourceTree = "<group>"; };
+		4BBCB3EE1BADFDA000A58FD9 /* SiteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteDetailViewController.h; sourceTree = "<group>"; };
+		4BBCB3EF1BADFDA000A58FD9 /* SiteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteDetailViewController.m; sourceTree = "<group>"; };
+		4BBCB3F01BADFDA000A58FD9 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		4BBCB3F11BADFDA000A58FD9 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		4BBCB3F41BADFDA000A58FD9 /* hangers.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hangers.jpeg; sourceTree = "<group>"; };
+		CED6CC7CC462EC5D98C67496 /* Pods-Findy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Findy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Findy/Pods-Findy.debug.xcconfig"; sourceTree = "<group>"; };
+		D272E6127A39DAB214D3D406 /* libPods-Findy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Findy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA4C77B61BAD5686003B5147 /* ItemList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemList.xib; sourceTree = "<group>"; };
+		EA4C77B71BAD5686003B5147 /* MyOrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyOrderCell.xib; sourceTree = "<group>"; };
+		EA4C77B81BAD5686003B5147 /* ItemListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemListCell.xib; sourceTree = "<group>"; };
+		EA4C77B91BAD5686003B5147 /* Single Item.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Single Item.xib"; sourceTree = "<group>"; };
+		EA4C77BA1BAD5686003B5147 /* MyOrder.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyOrder.xib; sourceTree = "<group>"; };
+		EA4C77BB1BAD5686003B5147 /* OrderForm.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderForm.xib; sourceTree = "<group>"; };
+		EA4C77BC1BAD5686003B5147 /* Home.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Home.xib; sourceTree = "<group>"; };
+		EA4C77C41BAD5754003B5147 /* hangers.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hangers.jpeg; sourceTree = "<group>"; };
+		EA4C77C61BAD58E4003B5147 /* lolgo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lolgo.png; sourceTree = "<group>"; };
+		EADD3FDE1BADA99500BC3EF6 /* Findy-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Findy-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B9FA67F1BAD4887009BD71C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D368D9E1BAD8E2B00EACFC8 /* MapKit.framework in Frameworks */,
+				BDECD4278840E9D6B4420B1A /* libPods-Findy.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9FA6931BAD4887009BD71C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9FA69E1BAD4887009BD71C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CDA56F405C58E432B7191D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D368D9D1BAD8E2B00EACFC8 /* MapKit.framework */,
+				D272E6127A39DAB214D3D406 /* libPods-Findy.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B9FA6791BAD4887009BD71C = {
+			isa = PBXGroup;
+			children = (
+				4B9FA6841BAD4887009BD71C /* Findy */,
+				4B9FA6991BAD4887009BD71C /* FindyTests */,
+				4B9FA6A41BAD4887009BD71C /* FindyUITests */,
+				4B9FA6831BAD4887009BD71C /* Products */,
+				2CDA56F405C58E432B7191D2 /* Frameworks */,
+				981D6831381504C5D7FCD163 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		4B9FA6831BAD4887009BD71C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B9FA6821BAD4887009BD71C /* Findy.app */,
+				4B9FA6961BAD4887009BD71C /* FindyTests.xctest */,
+				4B9FA6A11BAD4887009BD71C /* FindyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B9FA6841BAD4887009BD71C /* Findy */ = {
+			isa = PBXGroup;
+			children = (
+				4BBCB3E91BADFDA000A58FD9 /* Login */,
+				4B9FA6851BAD4887009BD71C /* AppDelegate.swift */,
+				4B9FA6871BAD4887009BD71C /* ViewController.swift */,
+				EA4C77B51BAD566D003B5147 /* Objective C Files */,
+				4B9FA68C1BAD4887009BD71C /* Assets.xcassets */,
+				4B9FA68E1BAD4887009BD71C /* LaunchScreen.storyboard */,
+				4B9FA6911BAD4887009BD71C /* Info.plist */,
+				1D1B57131BADABD70039DD42 /* Main.storyboard */,
+			);
+			path = Findy;
+			sourceTree = "<group>";
+		};
+		4B9FA6991BAD4887009BD71C /* FindyTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B9FA69A1BAD4887009BD71C /* FindyTests.swift */,
+				4B9FA69C1BAD4887009BD71C /* Info.plist */,
+			);
+			path = FindyTests;
+			sourceTree = "<group>";
+		};
+		4B9FA6A41BAD4887009BD71C /* FindyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4B9FA6A51BAD4887009BD71C /* FindyUITests.swift */,
+				4B9FA6A71BAD4887009BD71C /* Info.plist */,
+			);
+			path = FindyUITests;
+			sourceTree = "<group>";
+		};
+		4BBCB3E91BADFDA000A58FD9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4BBCB3EA1BADFDA000A58FD9 /* Locat.xib */,
+				4BBCB3EB1BADFDA000A58FD9 /* Login.storyboard */,
+				4BBCB3EC1BADFDA000A58FD9 /* ParentViewController.h */,
+				4BBCB3ED1BADFDA000A58FD9 /* ParentViewController.m */,
+				4BBCB3EE1BADFDA000A58FD9 /* SiteDetailViewController.h */,
+				4BBCB3EF1BADFDA000A58FD9 /* SiteDetailViewController.m */,
+				4BBCB3F01BADFDA000A58FD9 /* LoginViewController.h */,
+				4BBCB3F11BADFDA000A58FD9 /* LoginViewController.m */,
+				4BBCB3F41BADFDA000A58FD9 /* hangers.jpeg */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		981D6831381504C5D7FCD163 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CED6CC7CC462EC5D98C67496 /* Pods-Findy.debug.xcconfig */,
+				2DD8502462983585A75D0B76 /* Pods-Findy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EA4C77B51BAD566D003B5147 /* Objective C Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA4C77B61BAD5686003B5147 /* ItemList.xib */,
+				EA4C77B71BAD5686003B5147 /* MyOrderCell.xib */,
+				EA4C77B81BAD5686003B5147 /* ItemListCell.xib */,
+				EA4C77B91BAD5686003B5147 /* Single Item.xib */,
+				EA4C77BA1BAD5686003B5147 /* MyOrder.xib */,
+				EA4C77BB1BAD5686003B5147 /* OrderForm.xib */,
+				EA4C77BC1BAD5686003B5147 /* Home.xib */,
+				EA4C77C61BAD58E4003B5147 /* lolgo.png */,
+				EA4C77C41BAD5754003B5147 /* hangers.jpeg */,
+				EADD3FDE1BADA99500BC3EF6 /* Findy-Bridging-Header.h */,
+			);
+			name = "Objective C Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B9FA6811BAD4887009BD71C /* Findy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B9FA6AA1BAD4887009BD71C /* Build configuration list for PBXNativeTarget "Findy" */;
+			buildPhases = (
+				2BBAFC7376099ACC8DD8B8BC /* Check Pods Manifest.lock */,
+				4B9FA67E1BAD4887009BD71C /* Sources */,
+				4B9FA67F1BAD4887009BD71C /* Frameworks */,
+				4B9FA6801BAD4887009BD71C /* Resources */,
+				6609077F6EC623D5D03AEA12 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Findy;
+			productName = Findy;
+			productReference = 4B9FA6821BAD4887009BD71C /* Findy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B9FA6951BAD4887009BD71C /* FindyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B9FA6AD1BAD4887009BD71C /* Build configuration list for PBXNativeTarget "FindyTests" */;
+			buildPhases = (
+				4B9FA6921BAD4887009BD71C /* Sources */,
+				4B9FA6931BAD4887009BD71C /* Frameworks */,
+				4B9FA6941BAD4887009BD71C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B9FA6981BAD4887009BD71C /* PBXTargetDependency */,
+			);
+			name = FindyTests;
+			productName = FindyTests;
+			productReference = 4B9FA6961BAD4887009BD71C /* FindyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4B9FA6A01BAD4887009BD71C /* FindyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B9FA6B01BAD4887009BD71C /* Build configuration list for PBXNativeTarget "FindyUITests" */;
+			buildPhases = (
+				4B9FA69D1BAD4887009BD71C /* Sources */,
+				4B9FA69E1BAD4887009BD71C /* Frameworks */,
+				4B9FA69F1BAD4887009BD71C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B9FA6A31BAD4887009BD71C /* PBXTargetDependency */,
+			);
+			name = FindyUITests;
+			productName = FindyUITests;
+			productReference = 4B9FA6A11BAD4887009BD71C /* FindyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B9FA67A1BAD4887009BD71C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = FindyTeam;
+				TargetAttributes = {
+					4B9FA6811BAD4887009BD71C = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = RYRSSY3589;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					4B9FA6951BAD4887009BD71C = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 4B9FA6811BAD4887009BD71C;
+					};
+					4B9FA6A01BAD4887009BD71C = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 4B9FA6811BAD4887009BD71C;
+					};
+				};
+			};
+			buildConfigurationList = 4B9FA67D1BAD4887009BD71C /* Build configuration list for PBXProject "Findy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B9FA6791BAD4887009BD71C;
+			productRefGroup = 4B9FA6831BAD4887009BD71C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B9FA6811BAD4887009BD71C /* Findy */,
+				4B9FA6951BAD4887009BD71C /* FindyTests */,
+				4B9FA6A01BAD4887009BD71C /* FindyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B9FA6801BAD4887009BD71C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA4C77BF1BAD5686003B5147 /* ItemListCell.xib in Resources */,
+				EA4C77C71BAD58E4003B5147 /* lolgo.png in Resources */,
+				4BBCB3F61BADFDA000A58FD9 /* Login.storyboard in Resources */,
+				4B9FA6901BAD4887009BD71C /* LaunchScreen.storyboard in Resources */,
+				1D1B57141BADABD70039DD42 /* Main.storyboard in Resources */,
+				4B9FA68D1BAD4887009BD71C /* Assets.xcassets in Resources */,
+				EA4C77BD1BAD5686003B5147 /* ItemList.xib in Resources */,
+				4BBCB3FB1BADFDA000A58FD9 /* hangers.jpeg in Resources */,
+				4BBCB3F51BADFDA000A58FD9 /* Locat.xib in Resources */,
+				EA4C77C01BAD5686003B5147 /* Single Item.xib in Resources */,
+				EA4C77C31BAD5686003B5147 /* Home.xib in Resources */,
+				EA4C77C51BAD5754003B5147 /* hangers.jpeg in Resources */,
+				EA4C77C21BAD5686003B5147 /* OrderForm.xib in Resources */,
+				EA4C77C11BAD5686003B5147 /* MyOrder.xib in Resources */,
+				EA4C77BE1BAD5686003B5147 /* MyOrderCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9FA6941BAD4887009BD71C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9FA69F1BAD4887009BD71C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BBAFC7376099ACC8DD8B8BC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6609077F6EC623D5D03AEA12 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Findy/Pods-Findy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B9FA67E1BAD4887009BD71C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BBCB3F81BADFDA000A58FD9 /* SiteDetailViewController.m in Sources */,
+				4B9FA6881BAD4887009BD71C /* ViewController.swift in Sources */,
+				4B9FA6861BAD4887009BD71C /* AppDelegate.swift in Sources */,
+				4BBCB3F71BADFDA000A58FD9 /* ParentViewController.m in Sources */,
+				4BBCB3F91BADFDA000A58FD9 /* LoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9FA6921BAD4887009BD71C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9FA69B1BAD4887009BD71C /* FindyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9FA69D1BAD4887009BD71C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9FA6A61BAD4887009BD71C /* FindyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B9FA6981BAD4887009BD71C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B9FA6811BAD4887009BD71C /* Findy */;
+			targetProxy = 4B9FA6971BAD4887009BD71C /* PBXContainerItemProxy */;
+		};
+		4B9FA6A31BAD4887009BD71C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B9FA6811BAD4887009BD71C /* Findy */;
+			targetProxy = 4B9FA6A21BAD4887009BD71C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B9FA68E1BAD4887009BD71C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B9FA68F1BAD4887009BD71C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B9FA6A81BAD4887009BD71C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B9FA6A91BAD4887009BD71C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B9FA6AB1BAD4887009BD71C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CED6CC7CC462EC5D98C67496 /* Pods-Findy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Findy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FindyTeam.Findy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		4B9FA6AC1BAD4887009BD71C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DD8502462983585A75D0B76 /* Pods-Findy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Findy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FindyTeam.Findy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		4B9FA6AE1BAD4887009BD71C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FindyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FindyTeam.FindyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Findy.app/Findy";
+			};
+			name = Debug;
+		};
+		4B9FA6AF1BAD4887009BD71C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FindyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FindyTeam.FindyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Findy.app/Findy";
+			};
+			name = Release;
+		};
+		4B9FA6B11BAD4887009BD71C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FindyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FindyTeam.FindyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Findy;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		4B9FA6B21BAD4887009BD71C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FindyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FindyTeam.FindyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Findy;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B9FA67D1BAD4887009BD71C /* Build configuration list for PBXProject "Findy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B9FA6A81BAD4887009BD71C /* Debug */,
+				4B9FA6A91BAD4887009BD71C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B9FA6AA1BAD4887009BD71C /* Build configuration list for PBXNativeTarget "Findy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B9FA6AB1BAD4887009BD71C /* Debug */,
+				4B9FA6AC1BAD4887009BD71C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B9FA6AD1BAD4887009BD71C /* Build configuration list for PBXNativeTarget "FindyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B9FA6AE1BAD4887009BD71C /* Debug */,
+				4B9FA6AF1BAD4887009BD71C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B9FA6B01BAD4887009BD71C /* Build configuration list for PBXNativeTarget "FindyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B9FA6B11BAD4887009BD71C /* Debug */,
+				4B9FA6B21BAD4887009BD71C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B9FA67A1BAD4887009BD71C /* Project object */;
+}

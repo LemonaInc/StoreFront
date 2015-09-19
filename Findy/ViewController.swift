@@ -1,0 +1,136 @@
+//
+//  ViewController.swift
+//  Findy
+//
+//  Created by Oskar Zhang on 9/19/15.
+//  Copyright © 2015 FindyTeam. All rights reserved.
+//
+
+import UIKit
+import MapKit
+import AVFoundation
+
+class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDelegate {
+    let locationManager: CLLocationManager = CLLocationManager() // the object that provides us the location data
+    var userLocation: CLLocation!
+    
+    @IBOutlet weak var mapView: MKMapView!
+//    @IBOutlet weak var mapView: GMSMapView!
+    @IBOutlet weak var toolBar: UIToolbar!
+    var searchController:UISearchController!
+    var searchResultsTableViewController:UITableViewController!
+    var storePins:[CustomPin] = []
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        mapView.delegate = self
+        mapView.showsUserLocation = true
+
+        searchResultsTableViewController = UITableViewController()
+        searchController = UISearchController(searchResultsController: searchResultsTableViewController)
+        
+        self.navigationItem.titleView = searchController.searchBar
+        
+     
+        delay (2) {
+            self.getUserLocation(self)
+        }
+
+        
+        print("Requesting your current location...")
+        getUserLocation(self)
+        view.insertSubview(toolBar, atIndex: 1)
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func tapOnGetLocation(sender: AnyObject){
+        getUserLocation(self)
+//        mapView.setCenterCoordinate(mapView.userLocation.coordinate, animated: true)
+    }
+//    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+//        MKPinAnnotationView *annView=[[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"currentloc"];
+//        
+//        if([inStock isEqual:@"yes"]){
+//            annView.pinColor = MKPinAnnotationColorGreen;
+//        }
+//        if([inStock isEqual:@"no"]){
+//            annView.pinColor = MKPinAnnotationColorRed;
+//        }
+//        if([inStock isEqual:@"unknown"]){
+//            UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"greyPin.png"]];
+//            [annView addSubview:imageView];
+//        }
+//        annView.animatesDrop=TRUE;
+//        annView.canShowCallout = YES;
+//        annView.calloutOffset = CGPointMake(-5, 5);
+//        return annView;
+//        
+//        var pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "currentLoc")
+//        if
+//        
+        
+//    }
+    func getUserLocation(sender: AnyObject) {
+        locationManager.delegate = self // instantiate the CLLocationManager object
+        
+        if CLLocationManager.authorizationStatus() == .NotDetermined {
+            locationManager.requestAlwaysAuthorization()
+        }
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.distanceFilter = kCLDistanceFilterNone
+        self.locationManager.startUpdatingLocation()
+        // continuously send the application a stream of location data
+    }
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        let newLocation = locations.last!
+        mapView.setCenterCoordinate(newLocation.coordinate, animated: true)
+        let viewRegion = MKCoordinateRegionMakeWithDistance(newLocation.coordinate, 500, 500)
+        mapView.setRegion(viewRegion, animated: true)
+        manager.stopUpdatingLocation()
+    }
+    
+    
+
+    func delay(delay:Double, closure:()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
+    }
+    
+    func addStore(coordinate:CLLocationCoordinate2D,title:String)
+    {
+        let storePin = CustomPin(title: title, locationName: "", discipline: "", coordinate: coordinate)
+        storePins.append(storePin)
+        mapView.addAnnotation(storePin)
+    }
+}
+
+
+class CustomPin: NSObject, MKAnnotation {
+    let title: String?
+    let locationName: String
+    let discipline: String
+    var coordinate: CLLocationCoordinate2D
+    
+    init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {
+        self.title = title
+        self.locationName = locationName
+        self.discipline = discipline
+        self.coordinate = coordinate
+        
+        super.init()
+    }
+    
+    var subtitle: String? {
+        return locationName
+    }
+}
+
