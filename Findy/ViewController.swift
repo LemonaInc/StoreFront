@@ -13,6 +13,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
     let locationManager: CLLocationManager = CLLocationManager() // the object that provides us the location data
     var userLocation: CLLocation!
     
+       
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var toolBar: UIToolbar!
     var searchController:UISearchController!
@@ -21,6 +22,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
+        
+        
         mapView.delegate = self
         mapView.showsUserLocation = true
 
@@ -33,6 +38,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
         print("Requesting your current location...")
         getUserLocation(self)
         view.insertSubview(toolBar, atIndex: 1)
+        
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
