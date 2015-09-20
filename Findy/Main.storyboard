@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nvl-9e-4EZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8Ed-1y-7eN">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
@@ -98,7 +98,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9dE-nB-BYj">
                                 <rect key="frame" x="0.0" y="-16" width="320" height="584"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AED741DB-383C-4F1A-9090-3DB2A0754955" translatesAutoresizingMaskIntoConstraints="NO" id="AZt-A4-GSl">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="F0A01407-F73D-4E90-B960-1433D374BA32" translatesAutoresizingMaskIntoConstraints="NO" id="AZt-A4-GSl">
                                         <rect key="frame" x="-678" y="16" width="1113" height="594"/>
                                         <animations/>
                                     </imageView>
@@ -123,7 +123,7 @@
                                             <action selector="parseLoginButtonClicked:" destination="6xX-GO-que" eventType="touchUpInside" id="cRY-Z4-QaF"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="E0A36F69-12AD-4831-A6FA-350B98BD281F" translatesAutoresizingMaskIntoConstraints="NO" id="240-4O-9Qh">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CC7C9DC9-2030-4FD6-8264-5C3AC0CCEC6B" translatesAutoresizingMaskIntoConstraints="NO" id="240-4O-9Qh">
                                         <rect key="frame" x="-126" y="-12" width="116" height="107"/>
                                         <animations/>
                                     </imageView>
@@ -285,23 +285,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AED741DB-383C-4F1A-9090-3DB2A0754955" width="489" height="666">
-            <mutableData key="keyedArchiveRepresentation">
-YnBsaXN0MDDUAQIDBAUGOzxYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBMU
-GR4fJSYsLzU4VSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBz
-V05TQ29sb3KAAoAMEiTAAACAA4AKWns0ODksIDY2Nn3SFQoWGFpOUy5vYmplY3RzoReABIAJ0hUKGhii
-GxyABYAGgAkQBdMgCiEiIyRXTlMuYmFzZVtOUy5yZWxhdGl2ZYAAgAiAB18QfGZpbGU6Ly8vQXBwbGlj
-YXRpb25zL1hjb2RlLmFwcC9Db250ZW50cy9QbHVnSW5zL0lERUludGVyZmFjZUJ1aWxkZXJLaXQuaWRl
-cGx1Z2luL0NvbnRlbnRzL1Jlc291cmNlcy9JQk1pc3NpbmdJbWFnZUdseXBoLnRpZmbSJygpKlokY2xh
-c3NuYW1lWCRjbGFzc2VzVU5TVVJMoikrWE5TT2JqZWN00icoLS5XTlNBcnJheaItK9MwMQoyMzRXTlNX
-aGl0ZVxOU0NvbG9yU3BhY2VEMCAwABADgAvSJyg2N1dOU0NvbG9yojYr0icoOTpXTlNJbWFnZaI5K18Q
-D05TS2V5ZWRBcmNoaXZlctE9PlRyb290gAEACAARABoAIwAtADIANwBFAEsAVgBdAGQAcQB4AIAAggCE
-AIkAiwCNAJgAnQCoAKoArACuALMAtgC4ALoAvAC+AMUAzQDZANsA3QDfAV4BYwFuAXcBfQGAAYkBjgGW
-AZkBoAGoAbUBugG8Ab4BwwHLAc4B0wHbAd4B8AHzAfgAAAAAAAACAQAAAAAAAAA/AAAAAAAAAAAAAAAA
-AAAB+g
-</mutableData>
-        </image>
-        <image name="E0A36F69-12AD-4831-A6FA-350B98BD281F" width="512" height="512">
+        <image name="CC7C9DC9-2030-4FD6-8264-5C3AC0CCEC6B" width="512" height="512">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -17829,6 +17813,22 @@ AAAAqQAAAKsAAACtAAAArwAAALQAAAC3AAAAuQAAALsAAAC9AAAAvwAAAMQAAADbAAAA3QAAAN8AEAmT
 ABAJmAAQCaMAEAmsABAJvwAQCcMAEAnOABAJ1wAQCdwAEAnkABAJ5wAQCewAEAn7ABAJ/wAQCgYAEAoO
 ABAKGwAQCiAAEAoiABAKJAAQCikAEAoxABAKNAAQCjkAEApBABAKRAAQClYAEApZABAKXgAAAAAAAAQB
 AAAAAAAAAEEAAAAAAAAAAAAAAAAAEApgA
+</mutableData>
+        </image>
+        <image name="F0A01407-F73D-4E90-B960-1433D374BA32" width="489" height="666">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGOzxYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBMU
+GR4fJSYsLzU4VSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBz
+V05TQ29sb3KAAoAMEiTAAACAA4AKWns0ODksIDY2Nn3SFQoWGFpOUy5vYmplY3RzoReABIAJ0hUKGhii
+GxyABYAGgAkQBdMgCiEiIyRXTlMuYmFzZVtOUy5yZWxhdGl2ZYAAgAiAB18QfGZpbGU6Ly8vQXBwbGlj
+YXRpb25zL1hjb2RlLmFwcC9Db250ZW50cy9QbHVnSW5zL0lERUludGVyZmFjZUJ1aWxkZXJLaXQuaWRl
+cGx1Z2luL0NvbnRlbnRzL1Jlc291cmNlcy9JQk1pc3NpbmdJbWFnZUdseXBoLnRpZmbSJygpKlokY2xh
+c3NuYW1lWCRjbGFzc2VzVU5TVVJMoikrWE5TT2JqZWN00icoLS5XTlNBcnJheaItK9MwMQoyMzRXTlNX
+aGl0ZVxOU0NvbG9yU3BhY2VEMCAwABADgAvSJyg2N1dOU0NvbG9yojYr0icoOTpXTlNJbWFnZaI5K18Q
+D05TS2V5ZWRBcmNoaXZlctE9PlRyb290gAEACAARABoAIwAtADIANwBFAEsAVgBdAGQAcQB4AIAAggCE
+AIkAiwCNAJgAnQCoAKoArACuALMAtgC4ALoAvAC+AMUAzQDZANsA3QDfAV4BYwFuAXcBfQGAAYkBjgGW
+AZkBoAGoAbUBugG8Ab4BwwHLAc4B0wHbAd4B8AHzAfgAAAAAAAACAQAAAAAAAAA/AAAAAAAAAAAAAAAA
+AAAB+g
 </mutableData>
         </image>
         <image name="hangers.jpeg" width="2962" height="3949"/>

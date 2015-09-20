@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfileView" customModule="Findy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="365" height="168"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snoop.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hXu-bi-E37">
+                    <rect key="frame" x="8" y="34" width="100" height="100"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="hXu-bi-E37" secondAttribute="height" multiplier="1:1" id="KWo-QU-3qf"/>
+                        <constraint firstAttribute="height" constant="100" id="klr-4k-MvY"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYO-DV-7Wi">
+                    <rect key="frame" x="227" y="32" width="70" height="70"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="xYO-DV-7Wi" secondAttribute="height" multiplier="1:1" id="ZXu-x7-wpN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ku-rf-rxJ">
+                    <rect key="frame" x="116" y="32" width="70" height="70"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="7ku-rf-rxJ" secondAttribute="height" multiplier="1:1" id="wgR-bB-QAd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fr4-iD-ZYZ">
+                    <rect key="frame" x="116" y="112" width="70" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="LoO-3y-wMt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHZ-kS-3vH">
+                    <rect key="frame" x="227" y="112" width="70" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="hOR-zI-Gfv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="RHZ-kS-3vH" firstAttribute="top" secondItem="xYO-DV-7Wi" secondAttribute="bottom" constant="10" id="29y-w4-zMp"/>
+                <constraint firstItem="fr4-iD-ZYZ" firstAttribute="width" secondItem="7ku-rf-rxJ" secondAttribute="width" id="3C7-oG-PLj"/>
+                <constraint firstItem="fr4-iD-ZYZ" firstAttribute="centerX" secondItem="7ku-rf-rxJ" secondAttribute="centerX" id="6vi-iJ-z2g"/>
+                <constraint firstItem="hXu-bi-E37" firstAttribute="centerY" secondItem="7ku-rf-rxJ" secondAttribute="centerY" constant="17" id="8Vn-RP-7IB"/>
+                <constraint firstItem="fr4-iD-ZYZ" firstAttribute="top" secondItem="7ku-rf-rxJ" secondAttribute="bottom" constant="10" id="9NZ-2i-9MP"/>
+                <constraint firstItem="7ku-rf-rxJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="49" id="ACh-YN-s98"/>
+                <constraint firstItem="xYO-DV-7Wi" firstAttribute="width" secondItem="7ku-rf-rxJ" secondAttribute="width" id="AKW-q5-O4x"/>
+                <constraint firstItem="xYO-DV-7Wi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="49" id="E2S-jj-DGS"/>
+                <constraint firstItem="7ku-rf-rxJ" firstAttribute="centerY" secondItem="xYO-DV-7Wi" secondAttribute="centerY" id="KA0-CJ-OhZ"/>
+                <constraint firstItem="xYO-DV-7Wi" firstAttribute="leading" secondItem="7ku-rf-rxJ" secondAttribute="trailing" constant="41" id="LC4-Lo-7L4"/>
+                <constraint firstAttribute="bottom" secondItem="hXu-bi-E37" secondAttribute="bottom" constant="60" id="Tau-ni-dQc"/>
+                <constraint firstItem="hXu-bi-E37" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="W5d-fP-sbI"/>
+                <constraint firstItem="RHZ-kS-3vH" firstAttribute="width" secondItem="xYO-DV-7Wi" secondAttribute="width" id="WoD-UL-gna"/>
+                <constraint firstItem="7ku-rf-rxJ" firstAttribute="leading" secondItem="hXu-bi-E37" secondAttribute="trailing" constant="8" id="X9G-IM-23z"/>
+                <constraint firstAttribute="bottom" secondItem="xYO-DV-7Wi" secondAttribute="bottom" constant="49" id="a4t-DX-zs9"/>
+                <constraint firstItem="hXu-bi-E37" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="34" id="cxe-l4-INb"/>
+                <constraint firstItem="RHZ-kS-3vH" firstAttribute="centerX" secondItem="xYO-DV-7Wi" secondAttribute="centerX" id="kQj-jW-bRs"/>
+                <constraint firstAttribute="bottom" secondItem="7ku-rf-rxJ" secondAttribute="bottom" constant="49" id="sW3-sL-QVb"/>
+                <constraint firstAttribute="trailing" secondItem="xYO-DV-7Wi" secondAttribute="trailing" constant="68" id="sf4-bb-3qQ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Tau-ni-dQc"/>
+                    <exclude reference="ACh-YN-s98"/>
+                    <exclude reference="sW3-sL-QVb"/>
+                    <exclude reference="E2S-jj-DGS"/>
+                    <exclude reference="a4t-DX-zs9"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="history" destination="xYO-DV-7Wi" id="WOD-so-hC2"/>
+                <outlet property="profileImage" destination="hXu-bi-E37" id="0oJ-FW-RmW"/>
+                <outlet property="settings" destination="7ku-rf-rxJ" id="8Eq-5v-htd"/>
+            </connections>
+            <point key="canvasLocation" x="55.5" y="-503"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="snoop.jpg" width="618" height="412"/>
+    </resources>
+</document>

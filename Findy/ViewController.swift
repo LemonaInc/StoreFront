@@ -13,13 +13,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
     let locationManager: CLLocationManager = CLLocationManager() // the object that provides us the location data
     var userLocation: CLLocation!
     
-       
-    @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var toolBar: UIToolbar!
+    @IBOutlet weak var mapView: MKMapView!
     var searchController:UISearchController!
     var searchResultsTableViewController:UITableViewController!
     var storePins:[CustomPin] = []
-    
+    var profileView:UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,9 +26,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
         mapView.showsUserLocation = true
 
         searchResultsTableViewController = UITableViewController()
+        searchResultsTableViewController.view.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.9)
         searchController = UISearchController(searchResultsController: searchResultsTableViewController)
-        
+        searchController.delegate = self
+        searchController.hidesNavigationBarDuringPresentation = false
         self.navigationItem.titleView = searchController.searchBar
+
+        profileView = ProfileView.loadNib()
+        profileView.frame = CGRectMake(0, -150, UIScreen.mainScreen().bounds.width, 200)
+        self.view.addSubview(profileView)
+        
         self.getUserLocation(self)
         
         print("Requesting your current location...")
@@ -37,6 +43,23 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
         view.insertSubview(toolBar, atIndex: 1)
     }
 
+    
+    @IBAction func didClickProfile(sender: AnyObject) {
+        if self.profileView.frame.origin.y == -150
+        {
+        UIView.animateWithDuration(0.2, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+            self.profileView.frame = CGRectMake(0, 50, UIScreen.mainScreen().bounds.width, 150)
+
+            }, completion: nil)
+        }
+        else
+        {
+            UIView.animateWithDuration(0.2, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+                self.profileView.frame = CGRectMake(0, -150, UIScreen.mainScreen().bounds.width, 150)
+                
+                }, completion: nil)
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -73,8 +96,27 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
         storePins.append(storePin)
         mapView.addAnnotation(storePin)
     }
+    
 }
-
+extension ViewController: UISearchControllerDelegate
+{
+    func willPresentSearchController(searchController: UISearchController) {
+        //caculate frame here 
+        let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.height
+        let navigationBarFrame = navigationController!.navigationBar.frame
+        let tableViewY = navigationBarFrame.height + statusBarHeight
+        let tableViewHeight = mapView.frame.height - navigationBarFrame.height  - toolBar.frame.height
+        
+        searchResultsTableViewController.tableView.frame = CGRectMake(0, tableViewY, navigationBarFrame.width, tableViewHeight)
+    }
+    override func viewWillLayoutSubviews() {
+    }
+    func presentSearchController(searchController: UISearchController) {
+    }
+    func didPresentSearchController(searchController: UISearchController) {
+    }
+    
+}
 
 class CustomMKAnnotation: NSObject, MKAnnotation {
     var image: UIImage?
