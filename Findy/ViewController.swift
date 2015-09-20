@@ -17,7 +17,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
     @IBOutlet weak var mapView: MKMapView!
     var searchController: UISearchController!
     var searchResultsTableViewController: UITableViewController!
-    var storePins:[CustomMKAnnotation] = []
+    var storePins:[MyCustomAnnotation] = []
     var profileView: UIView!
     
     override func viewDidLoad() {
@@ -32,6 +32,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
         searchController.delegate = self
         searchController.hidesNavigationBarDuringPresentation = false
         self.navigationItem.titleView = searchController.searchBar
+        searchController.searchBar.placeholder = "Search for shops and products..."
+
 
         profileView = ProfileView.loadNib()
         profileView.frame = CGRectMake(0, -150, UIScreen.mainScreen().bounds.width, 200)
@@ -89,17 +91,32 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
         mapView.setRegion(viewRegion, animated: true)
         manager.stopUpdatingLocation()
         
-        addStore(newLocation.coordinate, title: "Hello!")
+        addStore(newLocation.coordinate, price: 93)
     }
     
     // Display the custom view
-    func addStore(coordinate: CLLocationCoordinate2D, title: String) {
+    func addStore(coordinate: CLLocationCoordinate2D, price: Int) {
         print("addStore called!")
-        let storePin = CustomMKAnnotation(coordinate: coordinate)
+        let storePin = MyCustomAnnotation(coordinate: coordinate, price: price)
         storePins.append(storePin)
         mapView.addAnnotation(storePin)
     }
     
+    func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
+        let annotation1 = self.storePins[0]
+        let identifier = "pin"
+        var view: MKPinAnnotationView
+        if let dequeuedView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier) as? MKPinAnnotationView{
+            dequeuedView.annotation = annotation1
+            view = dequeuedView
+        } else {
+            view = MKPinAnnotationView(annotation: annotation1, reuseIdentifier:identifier)
+            view.calloutOffset = CGPoint(x: -5, y: 5)
+            view.pinColor = MKPinAnnotationColor.Purple
+        }
+        
+        return view
+    }
 }
 extension ViewController: UISearchControllerDelegate
 {
@@ -121,11 +138,13 @@ extension ViewController: UISearchControllerDelegate
     
 }
 
-class CustomMKAnnotation: NSObject, MKAnnotation {
+class MyCustomAnnotation: NSObject, MKAnnotation {
     dynamic var coordinate: CLLocationCoordinate2D
+    var price: Int?
     
-    init(coordinate: CLLocationCoordinate2D) {
+    init(coordinate: CLLocationCoordinate2D, price: Int) {
         self.coordinate = coordinate
+        self.price = price
     }
 }
 
@@ -136,4 +155,8 @@ extension UIView {
             bundle: bundle
             ).instantiateWithOwner(nil, options: nil)[0] as? UIView
     }
+}
+
+class myNibFile: UIView {
+    
 }
