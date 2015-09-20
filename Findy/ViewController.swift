@@ -8,7 +8,6 @@
 
 import UIKit
 import MapKit
-import AVFoundation
 
 class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDelegate {
     let locationManager: CLLocationManager = CLLocationManager() // the object that provides us the location data
@@ -16,13 +15,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
     
     @IBOutlet weak var toolBar: UIToolbar!
     @IBOutlet weak var mapView: MKMapView!
-//    @IBOutlet weak var mapView: GMSMapView!
     var searchController:UISearchController!
     var searchResultsTableViewController:UITableViewController!
     var storePins:[CustomPin] = []
     var profileView:UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         mapView.delegate = self
         mapView.showsUserLocation = true
 
@@ -32,15 +31,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
         searchController.delegate = self
         searchController.hidesNavigationBarDuringPresentation = false
         self.navigationItem.titleView = searchController.searchBar
-        
+
         profileView = ProfileView.loadNib()
         profileView.frame = CGRectMake(0, -150, UIScreen.mainScreen().bounds.width, 200)
         self.view.addSubview(profileView)
         
-        delay (2) {
-            self.getUserLocation(self)
-        }
-
+        self.getUserLocation(self)
         
         print("Requesting your current location...")
         getUserLocation(self)
@@ -84,8 +80,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
         self.locationManager.startUpdatingLocation()
         // continuously send the application a stream of location data
     }
+    
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
         let newLocation = locations.last!
         mapView.setCenterCoordinate(newLocation.coordinate, animated: true)
         let viewRegion = MKCoordinateRegionMakeWithDistance(newLocation.coordinate, 500, 500)
@@ -93,20 +89,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
         manager.stopUpdatingLocation()
     }
     
-    
-
-    func delay(delay:Double, closure:()->()) {
-        dispatch_after(
-            dispatch_time(
-                DISPATCH_TIME_NOW,
-                Int64(delay * Double(NSEC_PER_SEC))
-            ),
-            dispatch_get_main_queue(), closure)
-    }
-    
-    func addStore(coordinate:CLLocationCoordinate2D,title:String)
-    {
-        let storePin = CustomPin(title: title, locationName: "", discipline: "", coordinate: coordinate)
+    // Display the custom view
+    func addStore(coordinate:CLLocationCoordinate2D,title:String) {
+        print("addStore called!")
+        let storePin = CustomMKAnnotation(title: title, locationName: "", discipline: "", coordinate: coordinate)
         storePins.append(storePin)
         mapView.addAnnotation(storePin)
     }
@@ -132,24 +118,25 @@ extension ViewController: UISearchControllerDelegate
     
 }
 
-class CustomPin: NSObject, MKAnnotation {
-    let title: String?
-    let locationName: String
-    let discipline: String
+class CustomMKAnnotation: NSObject, MKAnnotation {
+    var image: UIImage?
+    var prize: Int?
     var coordinate: CLLocationCoordinate2D
+    var markerData: NSDictionary
     
-    init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {
-        self.title = title
-        self.locationName = locationName
-        self.discipline = discipline
+    init(coordinate: CLLocationCoordinate2D, markerData: NSDictionary) {
+        self.markerData = markerData
         self.coordinate = coordinate
         
         super.init()
     }
-    
-    var subtitle: String? {
-        return locationName
-    }
 }
 
-
+extension UIView {
+    class func loadFromNibNamed(nibNamed: String, bundle : NSBundle? = nil) -> UIView? {
+        return UINib(
+            nibName: nibNamed,
+            bundle: bundle
+            ).instantiateWithOwner(nil, options: nil)[0] as? UIView
+    }
+}
