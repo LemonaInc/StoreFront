@@ -13,32 +13,13 @@ import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    
     
     var window: UIWindow?
     let kUserHasAlreadyLoggedIn = "UserHasAlreadyLoggedIn"
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-
-    
         let hasLoggedin = NSUserDefaults.standardUserDefaults().boolForKey(kUserHasAlreadyLoggedIn)
-//        if !hasLoggedin
-//        {
-//            let loginSb = UIStoryboard(name: "Login", bundle: NSBundle.mainBundle())
-//            let loginVC = loginSb.instantiateViewControllerWithIdentifier("LoginVC")
-//            
-//            
-//           self.window  = UIWindow(frame: UIScreen.mainScreen().bounds)
-//
-//            UIView.transitionWithView(self.window!, duration: 0.5, options: .TransitionCrossDissolve, animations: { () -> Void in
-//                self.window!.rootViewController = loginVC
-//                
-//                }, completion: { (success) -> Void in
-//                    //
-//            })
-//        }
         
         // Override point for customization after application launch.
         return true
@@ -61,10 +42,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         // ...
-        
-        
-        
-        
     }
 
     func applicationWillResignActive(application: UIApplication) {

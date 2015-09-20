@@ -23,9 +23,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        
-        
         mapView.delegate = self
         mapView.showsUserLocation = true
 
@@ -38,10 +35,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
         print("Requesting your current location...")
         getUserLocation(self)
         view.insertSubview(toolBar, atIndex: 1)
-        
-        
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -75,6 +68,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
     
     // Display the custom view
     func addStore(coordinate:CLLocationCoordinate2D,title:String) {
+        print("addStore called!")
         let storePin = CustomMKAnnotation(title: title, locationName: "", discipline: "", coordinate: coordinate)
         storePins.append(storePin)
         mapView.addAnnotation(storePin)

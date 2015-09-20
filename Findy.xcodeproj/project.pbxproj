@@ -66,8 +66,8 @@
 		4B9FA68F1BAD4887009BD71C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B9FA6911BAD4887009BD71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B9FA6961BAD4887009BD71C /* FindyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B9FA69A1BAD4887009BD71C /* FindyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindyTests.swift; sourceTree = "<group>"; };
-		4B9FA69C1BAD4887009BD71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = FindyTests/Info.plist; sourceTree = "<group>"; };
+		4B9FA69A1BAD4887009BD71C /* FindyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FindyTests.swift; path = FindyTests/FindyTests.swift; sourceTree = SOURCE_ROOT; };
+		4B9FA69C1BAD4887009BD71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B9FA6A11BAD4887009BD71C /* FindyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B9FA6A51BAD4887009BD71C /* FindyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindyUITests.swift; sourceTree = "<group>"; };
 		4B9FA6A71BAD4887009BD71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		EA26EC6B1BAE28190048DD00 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		EA26EC6D1BAE28300048DD00 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = "../../../../Applications/Adobe A/Adobe Flash CC/AIR3.8/lib/aot/stub/libz.dylib"; sourceTree = "<group>"; };
 		EA26EC6F1BAE28400048DD00 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = "../../../../Applications/Adobe A/Adobe Flash CC/AIR3.8/lib/aot/stub/libsqlite3.dylib"; sourceTree = "<group>"; };
-		EA26EC7F1BAE29DE0048DD00 /* Findy-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Findy-Bridging-Header.h"; sourceTree = "<group>"; };
+		EA26EC7F1BAE29DE0048DD00 /* Findy-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Findy-Bridging-Header.h"; path = "FindyUITests/Findy-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		EA26EC801BAE2A6F0048DD00 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Findy/Bolts.framework; sourceTree = "<group>"; };
 		EA26EC811BAE2A6F0048DD00 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Findy/Parse.framework; sourceTree = "<group>"; };
 		EA26EC821BAE2A6F0048DD00 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = Findy/ParseCrashReporting.framework; sourceTree = "<group>"; };
@@ -171,7 +171,6 @@
 			children = (
 				4B9FA6841BAD4887009BD71C /* Findy */,
 				4B9FA6991BAD4887009BD71C /* FindyTests */,
-				4B9FA69C1BAD4887009BD71C /* Info.plist */,
 				4B9FA6A41BAD4887009BD71C /* FindyUITests */,
 				4B9FA6831BAD4887009BD71C /* Products */,
 				2CDA56F405C58E432B7191D2 /* Frameworks */,
@@ -191,14 +190,14 @@
 		4B9FA6841BAD4887009BD71C /* Findy */ = {
 			isa = PBXGroup;
 			children = (
+				4BBCB3E91BADFDA000A58FD9 /* Login */,
+				EA26EC7F1BAE29DE0048DD00 /* Findy-Bridging-Header.h */,
 				4B9FA6851BAD4887009BD71C /* AppDelegate.swift */,
 				4B9FA6871BAD4887009BD71C /* ViewController.swift */,
-				4BBCB3E91BADFDA000A58FD9 /* Login */,
 				1D1B57131BADABD70039DD42 /* Main.storyboard */,
 				1D239A261BAE2390007963A5 /* CustomMKPin.xib */,
 				4B9FA68E1BAD4887009BD71C /* LaunchScreen.storyboard */,
 				4B9FA68C1BAD4887009BD71C /* Assets.xcassets */,
-				EA26EC8E1BAE30040048DD00 /* Login Window */,
 				4B9FA6911BAD4887009BD71C /* Info.plist */,
 			);
 			path = Findy;
@@ -208,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				4B9FA69A1BAD4887009BD71C /* FindyTests.swift */,
+				4B9FA69C1BAD4887009BD71C /* Info.plist */,
 			);
 			path = FindyTests;
 			sourceTree = "<group>";
@@ -215,7 +215,6 @@
 		4B9FA6A41BAD4887009BD71C /* FindyUITests */ = {
 			isa = PBXGroup;
 			children = (
-				EA26EC7F1BAE29DE0048DD00 /* Findy-Bridging-Header.h */,
 				4B9FA6A51BAD4887009BD71C /* FindyUITests.swift */,
 				4B9FA6A71BAD4887009BD71C /* Info.plist */,
 			);
@@ -234,13 +233,6 @@
 				EADD3FDE1BADA99500BC3EF6 /* Findy-Bridging-Header.h */,
 			);
 			path = Login;
-			sourceTree = "<group>";
-		};
-		EA26EC8E1BAE30040048DD00 /* Login Window */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Login Window";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
