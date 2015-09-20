@@ -15,10 +15,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
     
     @IBOutlet weak var toolBar: UIToolbar!
     @IBOutlet weak var mapView: MKMapView!
-    var searchController:UISearchController!
-    var searchResultsTableViewController:UITableViewController!
+    var searchController: UISearchController!
+    var searchResultsTableViewController: UITableViewController!
     var storePins:[CustomMKAnnotation] = []
-    var profileView:UIView!
+    var profileView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -79,7 +80,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
         locationManager.distanceFilter = kCLDistanceFilterNone
         self.locationManager.startUpdatingLocation()
         // continuously send the application a stream of location data
-    }
+        }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let newLocation = locations.last!
@@ -87,14 +88,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
         let viewRegion = MKCoordinateRegionMakeWithDistance(newLocation.coordinate, 500, 500)
         mapView.setRegion(viewRegion, animated: true)
         manager.stopUpdatingLocation()
+        
+        addStore(newLocation.coordinate, title: "Hello!")
     }
     
     // Display the custom view
-    func addStore(coordinate:CLLocationCoordinate2D,title:String) {
+    func addStore(coordinate: CLLocationCoordinate2D, title: String) {
         print("addStore called!")
-//        let storePin = CustomMKAnnotation(title: title, locationName: "", discipline: "", coordinate: coordinate)
-//        storePins.append(storePin)
-//        mapView.addAnnotation(storePsin)
+        let storePin = CustomMKAnnotation(coordinate: coordinate)
+        storePins.append(storePin)
+        mapView.addAnnotation(storePin)
     }
     
 }
@@ -119,16 +122,10 @@ extension ViewController: UISearchControllerDelegate
 }
 
 class CustomMKAnnotation: NSObject, MKAnnotation {
-    var image: UIImage?
-    var prize: Int?
-    var coordinate: CLLocationCoordinate2D
-    var markerData: NSDictionary
+    dynamic var coordinate: CLLocationCoordinate2D
     
-    init(coordinate: CLLocationCoordinate2D, markerData: NSDictionary) {
-        self.markerData = markerData
+    init(coordinate: CLLocationCoordinate2D) {
         self.coordinate = coordinate
-        
-        super.init()
     }
 }
 
