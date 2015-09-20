@@ -17,7 +17,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
     @IBOutlet weak var mapView: MKMapView!
     var searchController:UISearchController!
     var searchResultsTableViewController:UITableViewController!
-    var storePins:[CustomPin] = []
+    var storePins:[CustomMKAnnotation] = []
     var profileView:UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,9 +92,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
     // Display the custom view
     func addStore(coordinate:CLLocationCoordinate2D,title:String) {
         print("addStore called!")
-        let storePin = CustomMKAnnotation(title: title, locationName: "", discipline: "", coordinate: coordinate)
-        storePins.append(storePin)
-        mapView.addAnnotation(storePin)
+//        let storePin = CustomMKAnnotation(title: title, locationName: "", discipline: "", coordinate: coordinate)
+//        storePins.append(storePin)
+//        mapView.addAnnotation(storePsin)
     }
     
 }

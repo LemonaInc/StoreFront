@@ -7,70 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		128C388B08EC85AF4DDEDD0874D47BAF /* FAKIonIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = 7267F3BC20217A12AD2C5905AB986D56 /* FAKIonIcons.h */; };
-		18235B2E601EA7B9DB2C9A36E604A6BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E41C424452320FABE3B06B39399BA4 /* UIKit.framework */; };
+		30497CC3D05255C850AB235027EA8E42 /* FAKIonIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E874D134F7E051A0240B546DC1CC1AD /* FAKIonIcons.m */; };
 		4FEC4B9D14CE2FABF50CB0C207FCA1FD /* Pods-Findy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 919A0E42C463D11182583C4F81FB6D56 /* Pods-Findy-dummy.m */; };
-		62F1E157DFE92662753C96DADBE1F73F /* FAKIonIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 1269EDC189116695E4613ED0A21739FE /* FAKIonIcons.m */; };
-		9BEA32DCD4FFA44476363175A5865207 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F00E5CC0F7BC9F49F001D288CC3C97 /* CoreText.framework */; };
-		A7E4472AD2994FE1AFE82A337A5EBB61 /* FAKIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = D80CD0FC1655B166059E5161F4234929 /* FAKIcon.h */; };
-		C7E9ACAC4D67BFFFF77409F0676663B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79577A5C9C10E01FE3ED60B22510596B /* Foundation.framework */; };
-		CF2E2DAD514FDC5FE0E137CDDCD79520 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79577A5C9C10E01FE3ED60B22510596B /* Foundation.framework */; };
-		E708DAF35C8BB865267BF3BC85525F57 /* FontAwesomeKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F483FDC6FD4D104AA7C68CD2E4AA542 /* FontAwesomeKit-dummy.m */; };
-		FB5DF1974334EC2A45FA6788B3D8999C /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B756DDBF390B47BA708FBC809844777 /* FAKIcon.m */; };
+		53C7A23CCC0FCD74156378F81FEAF8E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3482FCAA2A65ECDB5757CB485FA4C811 /* Foundation.framework */; };
+		9C6E8DD9F7D54C3A923C2EA88C5B2159 /* FAKIonIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E91DCDA32666C64189C6FA683A53E1A /* FAKIonIcons.h */; };
+		B1C1BB8332720ED89BA546EB1A554FBA /* FAKIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = 43718AF4BF8E09A9EFEB953AF7BEE36D /* FAKIcon.h */; };
+		B353E507BD7EAAB6A4582A6FA0C9CFD6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077DB161557912A1D4324505D69D0117 /* UIKit.framework */; };
+		C2A90B6E07AF87C8B14EDAB3DC600354 /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C46C13074E58F749F3879B3917E5711 /* FAKIcon.m */; };
+		CF2E2DAD514FDC5FE0E137CDDCD79520 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3482FCAA2A65ECDB5757CB485FA4C811 /* Foundation.framework */; };
+		EBF967B1BE3D3CC4F14950CFA8C2779B /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFF8256BCF935B81690AA1378B5A4B3 /* CoreText.framework */; };
+		F886BD189EBC58DE618B59C5F9C38199 /* FontAwesomeKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B5EB6C18BA6FD893049294488CE01B /* FontAwesomeKit-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3EDF40B83C17E96DB966D5560D763022 /* PBXContainerItemProxy */ = {
+		463F9B3102F2C6B761119A0092965024 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A8A07EC6CF15E3FE4AF742E0BCBA68C8;
+			remoteGlobalIDString = 72619FF6DF8F4144A7AAE822B6B2D439;
 			remoteInfo = FontAwesomeKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F483FDC6FD4D104AA7C68CD2E4AA542 /* FontAwesomeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FontAwesomeKit-dummy.m"; sourceTree = "<group>"; };
-		1269EDC189116695E4613ED0A21739FE /* FAKIonIcons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAKIonIcons.m; path = FontAwesomeKit/FAKIonIcons.m; sourceTree = "<group>"; };
+		077DB161557912A1D4324505D69D0117 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		206AE592AC256B7E638A101671C2CEA2 /* Pods-Findy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Findy.release.xcconfig"; sourceTree = "<group>"; };
 		29B1DDF70276893A7B6F8D4B77B369D9 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
 		2CB2059A3B89A79902A38964120B17CF /* ionicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = ionicons.ttf; path = FontAwesomeKit/ionicons.ttf; sourceTree = "<group>"; };
 		2D7722545F7C3B7670117777AAB3FDAE /* Pods-Findy-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Findy-resources.sh"; sourceTree = "<group>"; };
-		4AD112AA0364D712D7EE9FAB8C5E0D02 /* libFontAwesomeKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFontAwesomeKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3482FCAA2A65ECDB5757CB485FA4C811 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		43718AF4BF8E09A9EFEB953AF7BEE36D /* FAKIcon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAKIcon.h; path = FontAwesomeKit/FAKIcon.h; sourceTree = "<group>"; };
 		5ED70793C867153D60770FEE21DD644C /* FontAwesomeKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FontAwesomeKit.xcconfig; sourceTree = "<group>"; };
-		6B756DDBF390B47BA708FBC809844777 /* FAKIcon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAKIcon.m; path = FontAwesomeKit/FAKIcon.m; sourceTree = "<group>"; };
-		7267F3BC20217A12AD2C5905AB986D56 /* FAKIonIcons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAKIonIcons.h; path = FontAwesomeKit/FAKIonIcons.h; sourceTree = "<group>"; };
-		79577A5C9C10E01FE3ED60B22510596B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6C46C13074E58F749F3879B3917E5711 /* FAKIcon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAKIcon.m; path = FontAwesomeKit/FAKIcon.m; sourceTree = "<group>"; };
 		919A0E42C463D11182583C4F81FB6D56 /* Pods-Findy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Findy-dummy.m"; sourceTree = "<group>"; };
-		A4F00E5CC0F7BC9F49F001D288CC3C97 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
-		A9E41C424452320FABE3B06B39399BA4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		93A192D2CFCC8C83C4C7B9BD818F9307 /* libFontAwesomeKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFontAwesomeKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E874D134F7E051A0240B546DC1CC1AD /* FAKIonIcons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAKIonIcons.m; path = FontAwesomeKit/FAKIonIcons.m; sourceTree = "<group>"; };
+		9E91DCDA32666C64189C6FA683A53E1A /* FAKIonIcons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAKIonIcons.h; path = FontAwesomeKit/FAKIonIcons.h; sourceTree = "<group>"; };
 		AD4584480B9BDB41D591279DD5368DD7 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BDECA8AD4D479FDAF8980E1658FD8A72 /* Pods-Findy-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Findy-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C3B5EB6C18BA6FD893049294488CE01B /* FontAwesomeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FontAwesomeKit-dummy.m"; sourceTree = "<group>"; };
 		C951B587E486A289A305E0996C1EDB84 /* Pods-Findy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Findy.debug.xcconfig"; sourceTree = "<group>"; };
-		D80CD0FC1655B166059E5161F4234929 /* FAKIcon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAKIcon.h; path = FontAwesomeKit/FAKIcon.h; sourceTree = "<group>"; };
 		DC38740DE8495B809DDCCB10A186E4C0 /* libPods-Findy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Findy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD1074C549F9274989AE0980AA04D859 /* Pods-Findy-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Findy-acknowledgements.plist"; sourceTree = "<group>"; };
+		EBFF8256BCF935B81690AA1378B5A4B3 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
 		EEDD2AF9CC4D56533B7D58E7F100F1E0 /* FontAwesomeKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesomeKit-prefix.pch"; sourceTree = "<group>"; };
-		F905F35D54987800DBF33FC35608C672 /* FontAwesomeKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FontAwesomeKit-Private.xcconfig"; sourceTree = "<group>"; };
+		FBF6EE3953A6CAB5C98253F559B42002 /* FontAwesomeKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FontAwesomeKit-Private.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		17FABC8F715BA95939DD8648B30C9DBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF967B1BE3D3CC4F14950CFA8C2779B /* CoreText.framework in Frameworks */,
+				53C7A23CCC0FCD74156378F81FEAF8E3 /* Foundation.framework in Frameworks */,
+				B353E507BD7EAAB6A4582A6FA0C9CFD6 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CDD93FDE689AE5EF5D5673E8AB2BC3AE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CF2E2DAD514FDC5FE0E137CDDCD79520 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2A8A161337DB5342E475590B0D4E63F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9BEA32DCD4FFA44476363175A5865207 /* CoreText.framework in Frameworks */,
-				C7E9ACAC4D67BFFFF77409F0676663B8 /* Foundation.framework in Frameworks */,
-				18235B2E601EA7B9DB2C9A36E604A6BC /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,8 +105,8 @@
 		20BA524869EF6E15E919C3931646B138 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				D80CD0FC1655B166059E5161F4234929 /* FAKIcon.h */,
-				6B756DDBF390B47BA708FBC809844777 /* FAKIcon.m */,
+				43718AF4BF8E09A9EFEB953AF7BEE36D /* FAKIcon.h */,
+				6C46C13074E58F749F3879B3917E5711 /* FAKIcon.m */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -122,9 +122,9 @@
 		3324E9915E1012CE444A2C019FFB0B4C /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				A4F00E5CC0F7BC9F49F001D288CC3C97 /* CoreText.framework */,
-				79577A5C9C10E01FE3ED60B22510596B /* Foundation.framework */,
-				A9E41C424452320FABE3B06B39399BA4 /* UIKit.framework */,
+				EBFF8256BCF935B81690AA1378B5A4B3 /* CoreText.framework */,
+				3482FCAA2A65ECDB5757CB485FA4C811 /* Foundation.framework */,
+				077DB161557912A1D4324505D69D0117 /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -147,8 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				5ED70793C867153D60770FEE21DD644C /* FontAwesomeKit.xcconfig */,
-				F905F35D54987800DBF33FC35608C672 /* FontAwesomeKit-Private.xcconfig */,
-				0F483FDC6FD4D104AA7C68CD2E4AA542 /* FontAwesomeKit-dummy.m */,
+				FBF6EE3953A6CAB5C98253F559B42002 /* FontAwesomeKit-Private.xcconfig */,
+				C3B5EB6C18BA6FD893049294488CE01B /* FontAwesomeKit-dummy.m */,
 				EEDD2AF9CC4D56533B7D58E7F100F1E0 /* FontAwesomeKit-prefix.pch */,
 			);
 			name = "Support Files";
@@ -169,8 +169,8 @@
 		8C72973E9868FDB4B83D998854692F1B /* IonIcons */ = {
 			isa = PBXGroup;
 			children = (
-				7267F3BC20217A12AD2C5905AB986D56 /* FAKIonIcons.h */,
-				1269EDC189116695E4613ED0A21739FE /* FAKIonIcons.m */,
+				9E91DCDA32666C64189C6FA683A53E1A /* FAKIonIcons.h */,
+				9E874D134F7E051A0240B546DC1CC1AD /* FAKIonIcons.m */,
 				C720D348075B5B3FB1116A053321D420 /* Resources */,
 			);
 			name = IonIcons;
@@ -205,7 +205,7 @@
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4AD112AA0364D712D7EE9FAB8C5E0D02 /* libFontAwesomeKit.a */,
+				93A192D2CFCC8C83C4C7B9BD818F9307 /* libFontAwesomeKit.a */,
 				DC38740DE8495B809DDCCB10A186E4C0 /* libPods-Findy.a */,
 			);
 			name = Products;
@@ -223,25 +223,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		14F783B6654941580FE270E7CE523984 /* Headers */ = {
+		AFFD76BB2BC77B78C993D7B188427554 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7E4472AD2994FE1AFE82A337A5EBB61 /* FAKIcon.h in Headers */,
-				128C388B08EC85AF4DDEDD0874D47BAF /* FAKIonIcons.h in Headers */,
+				B1C1BB8332720ED89BA546EB1A554FBA /* FAKIcon.h in Headers */,
+				9C6E8DD9F7D54C3A923C2EA88C5B2159 /* FAKIonIcons.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A8A07EC6CF15E3FE4AF742E0BCBA68C8 /* FontAwesomeKit */ = {
+		72619FF6DF8F4144A7AAE822B6B2D439 /* FontAwesomeKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 249C45366190BEC210BD096A7031F2CA /* Build configuration list for PBXNativeTarget "FontAwesomeKit" */;
+			buildConfigurationList = DF828877922DCD36F0E6C3C35CF16C22 /* Build configuration list for PBXNativeTarget "FontAwesomeKit" */;
 			buildPhases = (
-				E21D43FA4485D31976DF25B11DA62F74 /* Sources */,
-				D2A8A161337DB5342E475590B0D4E63F /* Frameworks */,
-				14F783B6654941580FE270E7CE523984 /* Headers */,
+				170D970EB774673BE2E3BF9FFC8107CB /* Sources */,
+				17FABC8F715BA95939DD8648B30C9DBC /* Frameworks */,
+				AFFD76BB2BC77B78C993D7B188427554 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -249,7 +249,7 @@
 			);
 			name = FontAwesomeKit;
 			productName = FontAwesomeKit;
-			productReference = 4AD112AA0364D712D7EE9FAB8C5E0D02 /* libFontAwesomeKit.a */;
+			productReference = 93A192D2CFCC8C83C4C7B9BD818F9307 /* libFontAwesomeKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		BA8B8D4F87EFC037064F08AEBB6EF370 /* Pods-Findy */ = {
@@ -262,7 +262,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				36F3F12AA79EF61815F7ECE935BCA774 /* PBXTargetDependency */,
+				BE6CE5B5E975245E68C39AAA0742CEBE /* PBXTargetDependency */,
 			);
 			name = "Pods-Findy";
 			productName = "Pods-Findy";
@@ -290,13 +290,23 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A8A07EC6CF15E3FE4AF742E0BCBA68C8 /* FontAwesomeKit */,
+				72619FF6DF8F4144A7AAE822B6B2D439 /* FontAwesomeKit */,
 				BA8B8D4F87EFC037064F08AEBB6EF370 /* Pods-Findy */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		170D970EB774673BE2E3BF9FFC8107CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2A90B6E07AF87C8B14EDAB3DC600354 /* FAKIcon.m in Sources */,
+				30497CC3D05255C850AB235027EA8E42 /* FAKIonIcons.m in Sources */,
+				F886BD189EBC58DE618B59C5F9C38199 /* FontAwesomeKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A0F1AE3B547C4272A4B7E42AD51A9AD5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -305,44 +315,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E21D43FA4485D31976DF25B11DA62F74 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FB5DF1974334EC2A45FA6788B3D8999C /* FAKIcon.m in Sources */,
-				62F1E157DFE92662753C96DADBE1F73F /* FAKIonIcons.m in Sources */,
-				E708DAF35C8BB865267BF3BC85525F57 /* FontAwesomeKit-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		36F3F12AA79EF61815F7ECE935BCA774 /* PBXTargetDependency */ = {
+		BE6CE5B5E975245E68C39AAA0742CEBE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FontAwesomeKit;
-			target = A8A07EC6CF15E3FE4AF742E0BCBA68C8 /* FontAwesomeKit */;
-			targetProxy = 3EDF40B83C17E96DB966D5560D763022 /* PBXContainerItemProxy */;
+			target = 72619FF6DF8F4144A7AAE822B6B2D439 /* FontAwesomeKit */;
+			targetProxy = 463F9B3102F2C6B761119A0092965024 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1F4F47A2671D44660DB6C1ABDA69DFC4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F905F35D54987800DBF33FC35608C672 /* FontAwesomeKit-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FontAwesomeKit/FontAwesomeKit-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 		21F987D0D7765EEAA6C3125F32C5AA5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C951B587E486A289A305E0996C1EDB84 /* Pods-Findy.debug.xcconfig */;
@@ -393,22 +377,6 @@
 			};
 			name = Release;
 		};
-		8A1157138CD2A96D7F708E507674A6A5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F905F35D54987800DBF33FC35608C672 /* FontAwesomeKit-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FontAwesomeKit/FontAwesomeKit-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		AA05AF9C3A14EE0E32F42C6E6D42D34F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -448,6 +416,22 @@
 			};
 			name = Debug;
 		};
+		CD6B5F54F5EDF1030858869753EEBD5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBF6EE3953A6CAB5C98253F559B42002 /* FontAwesomeKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FontAwesomeKit/FontAwesomeKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		D5DFC67500A7AAFD527CA979B9849248 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 206AE592AC256B7E638A101671C2CEA2 /* Pods-Findy.release.xcconfig */;
@@ -464,18 +448,25 @@
 			};
 			name = Release;
 		};
+		E697F53CE16D93217CC67EA9C3F0A66B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBF6EE3953A6CAB5C98253F559B42002 /* FontAwesomeKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FontAwesomeKit/FontAwesomeKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		249C45366190BEC210BD096A7031F2CA /* Build configuration list for PBXNativeTarget "FontAwesomeKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1F4F47A2671D44660DB6C1ABDA69DFC4 /* Debug */,
-				8A1157138CD2A96D7F708E507674A6A5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -490,6 +481,15 @@
 			buildConfigurations = (
 				21F987D0D7765EEAA6C3125F32C5AA5A /* Debug */,
 				D5DFC67500A7AAFD527CA979B9849248 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF828877922DCD36F0E6C3C35CF16C22 /* Build configuration list for PBXNativeTarget "FontAwesomeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E697F53CE16D93217CC67EA9C3F0A66B /* Debug */,
+				CD6B5F54F5EDF1030858869753EEBD5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

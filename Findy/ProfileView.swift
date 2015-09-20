@@ -22,8 +22,7 @@ class ProfileView:UIView {
         settings.setImage(settingsImage, forState: UIControlState.Normal)
         let historyImage = FAKIonIcons.iosClockOutlineIconWithSize(40).imageWithSize(CGSizeMake(40, 40))
         history.setImage(historyImage, forState: UIControlState.Normal)
-        let friendsImage = FAKIonIcons.iosPeopleOutlineIconWithSize(40).imageWithSize(CGSizeMake(40, 40))
-        friends.setImage(friendsImage, forState: UIControlState.Normal)
+        
         profileImage.layer.cornerRadius = profileImage.frame.height/2
         profileImage.clipsToBounds = true
         profileImage.layer.borderWidth = 2.0
