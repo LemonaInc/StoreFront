@@ -21,15 +21,15 @@
                         <viewControllerLayoutGuide type="bottom" id="qdr-Kn-uNR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Tna-RK-45Q">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kJ7-D5-pBF">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kJ7-D5-pBF">
+                                <rect key="frame" x="0.0" y="20" width="414" height="580"/>
                                 <animations/>
                             </mapView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Si-Js-YJA">
-                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
                                 <animations/>
                                 <items>
                                     <barButtonItem image="request0" id="C9F-lb-9cT">
@@ -98,7 +98,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9dE-nB-BYj">
                                 <rect key="frame" x="0.0" y="-16" width="320" height="584"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="8B0E59D4-9DC3-4D4E-9630-BADADDA71A77" translatesAutoresizingMaskIntoConstraints="NO" id="AZt-A4-GSl">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="05DA754D-60AD-4673-AFA0-927A673D536A" translatesAutoresizingMaskIntoConstraints="NO" id="AZt-A4-GSl">
                                         <rect key="frame" x="-678" y="16" width="1113" height="594"/>
                                         <animations/>
                                     </imageView>
@@ -123,7 +123,7 @@
                                             <action selector="parseLoginButtonClicked:" destination="6xX-GO-que" eventType="touchUpInside" id="cRY-Z4-QaF"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="13F52F16-9D44-4CC8-B476-BEAC6429BC8F" translatesAutoresizingMaskIntoConstraints="NO" id="240-4O-9Qh">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="063AE8B4-BFCC-408C-BFFE-357891E6C7DE" translatesAutoresizingMaskIntoConstraints="NO" id="240-4O-9Qh">
                                         <rect key="frame" x="-126" y="-12" width="116" height="107"/>
                                         <animations/>
                                     </imageView>
@@ -202,10 +202,10 @@
                                                 <animations/>
                                             </imageView>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XBC-TN-7Uj" userLabel="View - Email">
-                                                <rect key="frame" x="1" y="310" width="407" height="56"/>
+                                                <rect key="frame" x="-11" y="310" width="426" height="56"/>
                                                 <subviews>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EZN-IF-FFR" userLabel="Txt - Email">
-                                                        <rect key="frame" x="91" y="12" width="224" height="32"/>
+                                                        <rect key="frame" x="21" y="12" width="392" height="32"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
@@ -225,11 +225,27 @@
                                                 <rect key="frame" x="48" y="149" width="125" height="56"/>
                                                 <animations/>
                                             </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login_register.png" translatesAutoresizingMaskIntoConstraints="NO" id="unA-rs-xLf">
+                                                <rect key="frame" x="72" y="520" width="264" height="56"/>
+                                                <animations/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeF-iL-Y6y">
+                                                <rect key="frame" x="72" y="522" width="259" height="51"/>
+                                                <animations/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="Radius">
+                                                        <integer key="value" value="21"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="esr-F2-uer" kind="modal" id="lQh-Fy-VAB"/>
+                                                </connections>
+                                            </button>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f9o-21-MwD" userLabel="View - Password">
-                                                <rect key="frame" x="0.0" y="399" width="411" height="56"/>
+                                                <rect key="frame" x="0.0" y="399" width="415" height="56"/>
                                                 <subviews>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K2f-1Z-gJF" userLabel="Txt - Password">
-                                                        <rect key="frame" x="95" y="12" width="224" height="32"/>
+                                                        <rect key="frame" x="33" y="12" width="348" height="32"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
@@ -241,14 +257,6 @@
                                                 <animations/>
                                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.64459171829999995" colorSpace="calibratedRGB"/>
                                             </view>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login_register.png" translatesAutoresizingMaskIntoConstraints="NO" id="unA-rs-xLf">
-                                                <rect key="frame" x="72" y="520" width="264" height="56"/>
-                                                <animations/>
-                                            </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeF-iL-Y6y">
-                                                <rect key="frame" x="72" y="522" width="259" height="51"/>
-                                                <animations/>
-                                            </button>
                                         </subviews>
                                         <animations/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -277,7 +285,23 @@
         </scene>
     </scenes>
     <resources>
-        <image name="13F52F16-9D44-4CC8-B476-BEAC6429BC8F" width="512" height="512">
+        <image name="05DA754D-60AD-4673-AFA0-927A673D536A" width="489" height="666">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGOzxYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBMU
+GR4fJSYsLzU4VSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBz
+V05TQ29sb3KAAoAMEiTAAACAA4AKWns0ODksIDY2Nn3SFQoWGFpOUy5vYmplY3RzoReABIAJ0hUKGhii
+GxyABYAGgAkQBdMgCiEiIyRXTlMuYmFzZVtOUy5yZWxhdGl2ZYAAgAiAB18QfGZpbGU6Ly8vQXBwbGlj
+YXRpb25zL1hjb2RlLmFwcC9Db250ZW50cy9QbHVnSW5zL0lERUludGVyZmFjZUJ1aWxkZXJLaXQuaWRl
+cGx1Z2luL0NvbnRlbnRzL1Jlc291cmNlcy9JQk1pc3NpbmdJbWFnZUdseXBoLnRpZmbSJygpKlokY2xh
+c3NuYW1lWCRjbGFzc2VzVU5TVVJMoikrWE5TT2JqZWN00icoLS5XTlNBcnJheaItK9MwMQoyMzRXTlNX
+aGl0ZVxOU0NvbG9yU3BhY2VEMCAwABADgAvSJyg2N1dOU0NvbG9yojYr0icoOTpXTlNJbWFnZaI5K18Q
+D05TS2V5ZWRBcmNoaXZlctE9PlRyb290gAEACAARABoAIwAtADIANwBFAEsAVgBdAGQAcQB4AIAAggCE
+AIkAiwCNAJgAnQCoAKoArACuALMAtgC4ALoAvAC+AMUAzQDZANsA3QDfAV4BYwFuAXcBfQGAAYkBjgGW
+AZkBoAGoAbUBugG8Ab4BwwHLAc4B0wHbAd4B8AHzAfgAAAAAAAACAQAAAAAAAAA/AAAAAAAAAAAAAAAA
+AAAB+g
+</mutableData>
+        </image>
+        <image name="063AE8B4-BFCC-408C-BFFE-357891E6C7DE" width="512" height="512">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -17807,22 +17831,6 @@ ABAKGwAQCiAAEAoiABAKJAAQCikAEAoxABAKNAAQCjkAEApBABAKRAAQClYAEApZABAKXgAAAAAAAAQB
 AAAAAAAAAEEAAAAAAAAAAAAAAAAAEApgA
 </mutableData>
         </image>
-        <image name="8B0E59D4-9DC3-4D4E-9630-BADADDA71A77" width="489" height="666">
-            <mutableData key="keyedArchiveRepresentation">
-YnBsaXN0MDDUAQIDBAUGOzxYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBMU
-GR4fJSYsLzU4VSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBz
-V05TQ29sb3KAAoAMEiTAAACAA4AKWns0ODksIDY2Nn3SFQoWGFpOUy5vYmplY3RzoReABIAJ0hUKGhii
-GxyABYAGgAkQBdMgCiEiIyRXTlMuYmFzZVtOUy5yZWxhdGl2ZYAAgAiAB18QfGZpbGU6Ly8vQXBwbGlj
-YXRpb25zL1hjb2RlLmFwcC9Db250ZW50cy9QbHVnSW5zL0lERUludGVyZmFjZUJ1aWxkZXJLaXQuaWRl
-cGx1Z2luL0NvbnRlbnRzL1Jlc291cmNlcy9JQk1pc3NpbmdJbWFnZUdseXBoLnRpZmbSJygpKlokY2xh
-c3NuYW1lWCRjbGFzc2VzVU5TVVJMoikrWE5TT2JqZWN00icoLS5XTlNBcnJheaItK9MwMQoyMzRXTlNX
-aGl0ZVxOU0NvbG9yU3BhY2VEMCAwABADgAvSJyg2N1dOU0NvbG9yojYr0icoOTpXTlNJbWFnZaI5K18Q
-D05TS2V5ZWRBcmNoaXZlctE9PlRyb290gAEACAARABoAIwAtADIANwBFAEsAVgBdAGQAcQB4AIAAggCE
-AIkAiwCNAJgAnQCoAKoArACuALMAtgC4ALoAvAC+AMUAzQDZANsA3QDfAV4BYwFuAXcBfQGAAYkBjgGW
-AZkBoAGoAbUBugG8Ab4BwwHLAc4B0wHbAd4B8AHzAfgAAAAAAAACAQAAAAAAAAA/AAAAAAAAAAAAAAAA
-AAAB+g
-</mutableData>
-        </image>
         <image name="hangers.jpeg" width="2962" height="3949"/>
         <image name="login_facebook.png" width="125" height="56"/>
         <image name="login_register.png" width="264" height="56"/>
@@ -17830,4 +17838,7 @@ AAAB+g
         <image name="profile" width="22" height="21"/>
         <image name="request0" width="22" height="22"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="lQh-Fy-VAB"/>
+    </inferredMetricsTieBreakers>
 </document>
