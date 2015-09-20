@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D1B57141BADABD70039DD42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D1B57131BADABD70039DD42 /* Main.storyboard */; };
+		1D239A271BAE2390007963A5 /* CustomMKPin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D239A261BAE2390007963A5 /* CustomMKPin.xib */; settings = {ASSET_TAGS = (); }; };
 		1D368D9E1BAD8E2B00EACFC8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D368D9D1BAD8E2B00EACFC8 /* MapKit.framework */; };
 		4B9FA6861BAD4887009BD71C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9FA6851BAD4887009BD71C /* AppDelegate.swift */; };
 		4B9FA6881BAD4887009BD71C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9FA6871BAD4887009BD71C /* ViewController.swift */; };
@@ -56,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		1D1B57131BADABD70039DD42 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1D239A261BAE2390007963A5 /* CustomMKPin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomMKPin.xib; sourceTree = "<group>"; };
 		1D368D9D1BAD8E2B00EACFC8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4B9FA6821BAD4887009BD71C /* Findy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Findy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B9FA6851BAD4887009BD71C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				4B9FA6871BAD4887009BD71C /* ViewController.swift */,
 				4BBCB3E91BADFDA000A58FD9 /* Login */,
 				1D1B57131BADABD70039DD42 /* Main.storyboard */,
+				1D239A261BAE2390007963A5 /* CustomMKPin.xib */,
 				4B9FA68E1BAD4887009BD71C /* LaunchScreen.storyboard */,
 				4B9FA68C1BAD4887009BD71C /* Assets.xcassets */,
 				EA26EC8E1BAE30040048DD00 /* Login Window */,
@@ -352,6 +355,7 @@
 			files = (
 				4B9FA6901BAD4887009BD71C /* LaunchScreen.storyboard in Resources */,
 				1D1B57141BADABD70039DD42 /* Main.storyboard in Resources */,
+				1D239A271BAE2390007963A5 /* CustomMKPin.xib in Resources */,
 				4B9FA68D1BAD4887009BD71C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

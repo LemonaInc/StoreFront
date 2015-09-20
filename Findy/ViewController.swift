@@ -73,31 +73,34 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
         manager.stopUpdatingLocation()
     }
     
+    // Display the custom view
     func addStore(coordinate:CLLocationCoordinate2D,title:String) {
-        let storePin = CustomPin(title: title, locationName: "", discipline: "", coordinate: coordinate)
+        let storePin = CustomMKAnnotation(title: title, locationName: "", discipline: "", coordinate: coordinate)
         storePins.append(storePin)
         mapView.addAnnotation(storePin)
     }
 }
 
 
-class CustomPin: NSObject, MKAnnotation {
-    let title: String?
-    let locationName: String
-    let discipline: String
+class CustomMKAnnotation: NSObject, MKAnnotation {
+    var image: UIImage?
+    var prize: Int?
     var coordinate: CLLocationCoordinate2D
+    var markerData: NSDictionary
     
-    init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {
-        self.title = title
-        self.locationName = locationName
-        self.discipline = discipline
+    init(coordinate: CLLocationCoordinate2D, markerData: NSDictionary) {
+        self.markerData = markerData
         self.coordinate = coordinate
         
         super.init()
     }
-    
-    var subtitle: String? {
-        return locationName
-    }
 }
 
+extension UIView {
+    class func loadFromNibNamed(nibNamed: String, bundle : NSBundle? = nil) -> UIView? {
+        return UINib(
+            nibName: nibNamed,
+            bundle: bundle
+            ).instantiateWithOwner(nil, options: nil)[0] as? UIView
+    }
+}
