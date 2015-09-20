@@ -16,10 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     
     
-    
-    
-    
-    
     var window: UIWindow?
     let kUserHasAlreadyLoggedIn = "UserHasAlreadyLoggedIn"
 

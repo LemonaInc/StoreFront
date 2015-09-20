@@ -190,8 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				4B9FA6851BAD4887009BD71C /* AppDelegate.swift */,
-				4BBCB3E91BADFDA000A58FD9 /* Login */,
 				4B9FA6871BAD4887009BD71C /* ViewController.swift */,
+				4BBCB3E91BADFDA000A58FD9 /* Login */,
 				1D1B57131BADABD70039DD42 /* Main.storyboard */,
 				4B9FA68E1BAD4887009BD71C /* LaunchScreen.storyboard */,
 				4B9FA68C1BAD4887009BD71C /* Assets.xcassets */,
@@ -308,7 +308,7 @@
 				TargetAttributes = {
 					4B9FA6811BAD4887009BD71C = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = RYRSSY3589;
+						DevelopmentTeam = 45J9WDN6PB;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
 								enabled = 1;
