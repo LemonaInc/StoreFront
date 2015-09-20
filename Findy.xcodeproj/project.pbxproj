@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D1B57141BADABD70039DD42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D1B57131BADABD70039DD42 /* Main.storyboard */; };
-		1D239A271BAE2390007963A5 /* CustomMKPin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D239A261BAE2390007963A5 /* CustomMKPin.xib */; };
+		1D239A271BAE2390007963A5 /* CustomMKPin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D239A261BAE2390007963A5 /* CustomMKPin.xib */; settings = {ASSET_TAGS = (); }; };
 		1D368D9E1BAD8E2B00EACFC8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D368D9D1BAD8E2B00EACFC8 /* MapKit.framework */; };
 		4B9FA6861BAD4887009BD71C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9FA6851BAD4887009BD71C /* AppDelegate.swift */; };
 		4B9FA6881BAD4887009BD71C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9FA6871BAD4887009BD71C /* ViewController.swift */; };
@@ -19,7 +19,6 @@
 		4BBCB3F71BADFDA000A58FD9 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCB3ED1BADFDA000A58FD9 /* ParentViewController.m */; };
 		4BBCB3F81BADFDA000A58FD9 /* SiteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCB3EF1BADFDA000A58FD9 /* SiteDetailViewController.m */; };
 		4BBCB3F91BADFDA000A58FD9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCB3F11BADFDA000A58FD9 /* LoginViewController.m */; };
-		E8C4084DE38B09DF3AA1906A /* libPods-Findy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C83F7B7939D2440183984830 /* libPods-Findy.a */; };
 		EA26EC5E1BAE27CA0048DD00 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26EC5D1BAE27CA0048DD00 /* AudioToolbox.framework */; };
 		EA26EC601BAE27EA0048DD00 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26EC5F1BAE27EA0048DD00 /* CFNetwork.framework */; };
 		EA26EC621BAE27F40048DD00 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26EC611BAE27F40048DD00 /* CoreGraphics.framework */; };
@@ -30,13 +29,20 @@
 		EA26EC6C1BAE28190048DD00 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26EC6B1BAE28190048DD00 /* SystemConfiguration.framework */; };
 		EA26EC6E1BAE28300048DD00 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26EC6D1BAE28300048DD00 /* libz.dylib */; };
 		EA26EC701BAE28400048DD00 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26EC6F1BAE28400048DD00 /* libsqlite3.dylib */; };
-		EA26EC871BAE2A6F0048DD00 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26EC801BAE2A6F0048DD00 /* Bolts.framework */; };
-		EA26EC881BAE2A6F0048DD00 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26EC811BAE2A6F0048DD00 /* Parse.framework */; };
-		EA26EC891BAE2A6F0048DD00 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26EC821BAE2A6F0048DD00 /* ParseCrashReporting.framework */; };
-		EA26EC8A1BAE2A6F0048DD00 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26EC831BAE2A6F0048DD00 /* ParseFacebookUtils.framework */; };
-		EA26EC8B1BAE2A6F0048DD00 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26EC841BAE2A6F0048DD00 /* ParseFacebookUtilsV4.framework */; };
-		EA26EC8C1BAE2A6F0048DD00 /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26EC851BAE2A6F0048DD00 /* ParseTwitterUtils.framework */; };
-		EA26EC8D1BAE2A6F0048DD00 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26EC861BAE2A6F0048DD00 /* ParseUI.framework */; };
+		EA26ED211BAE4A190048DD00 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26ED201BAE4A190048DD00 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		EA26ED231BAE4A260048DD00 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26ED221BAE4A260048DD00 /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		EA26ED251BAE4A2C0048DD00 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26ED241BAE4A2C0048DD00 /* ParseCrashReporting.framework */; settings = {ASSET_TAGS = (); }; };
+		EA26ED271BAE4A350048DD00 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26ED261BAE4A350048DD00 /* ParseFacebookUtils.framework */; settings = {ASSET_TAGS = (); }; };
+		EA26ED291BAE4A3C0048DD00 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26ED281BAE4A3C0048DD00 /* ParseFacebookUtilsV4.framework */; settings = {ASSET_TAGS = (); }; };
+		EA26ED2B1BAE4A410048DD00 /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26ED2A1BAE4A410048DD00 /* ParseTwitterUtils.framework */; settings = {ASSET_TAGS = (); }; };
+		EA26ED2D1BAE4A480048DD00 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26ED2C1BAE4A480048DD00 /* ParseUI.framework */; settings = {ASSET_TAGS = (); }; };
+		EA26ED321BAE4AB60048DD00 /* login_facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = EA26ED2E1BAE4AB60048DD00 /* login_facebook.png */; settings = {ASSET_TAGS = (); }; };
+		EA26ED331BAE4AB60048DD00 /* login_facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA26ED2F1BAE4AB60048DD00 /* login_facebook@2x.png */; settings = {ASSET_TAGS = (); }; };
+		EA26ED341BAE4AB60048DD00 /* login_twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = EA26ED301BAE4AB60048DD00 /* login_twitter.png */; settings = {ASSET_TAGS = (); }; };
+		EA26ED351BAE4AB60048DD00 /* login_twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA26ED311BAE4AB60048DD00 /* login_twitter@2x.png */; settings = {ASSET_TAGS = (); }; };
+		EA26ED391BAE4ACC0048DD00 /* hangers.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EA26ED361BAE4ACC0048DD00 /* hangers.jpeg */; settings = {ASSET_TAGS = (); }; };
+		EA26ED3A1BAE4ACC0048DD00 /* login_register.png in Resources */ = {isa = PBXBuildFile; fileRef = EA26ED371BAE4ACC0048DD00 /* login_register.png */; settings = {ASSET_TAGS = (); }; };
+		EA26ED3B1BAE4ACC0048DD00 /* login_register@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA26ED381BAE4ACC0048DD00 /* login_register@2x.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,9 +84,6 @@
 		4BBCB3EF1BADFDA000A58FD9 /* SiteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteDetailViewController.m; sourceTree = "<group>"; };
 		4BBCB3F01BADFDA000A58FD9 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		4BBCB3F11BADFDA000A58FD9 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		A0C2352882B6837B9E30266F /* Pods-Findy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Findy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Findy/Pods-Findy.release.xcconfig"; sourceTree = "<group>"; };
-		A5A967A774F0E1E58CD62485 /* Pods-Findy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Findy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Findy/Pods-Findy.debug.xcconfig"; sourceTree = "<group>"; };
-		C83F7B7939D2440183984830 /* libPods-Findy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Findy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA26EC5D1BAE27CA0048DD00 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		EA26EC5F1BAE27EA0048DD00 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		EA26EC611BAE27F40048DD00 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -92,13 +95,20 @@
 		EA26EC6D1BAE28300048DD00 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = "../../../../Applications/Adobe A/Adobe Flash CC/AIR3.8/lib/aot/stub/libz.dylib"; sourceTree = "<group>"; };
 		EA26EC6F1BAE28400048DD00 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = "../../../../Applications/Adobe A/Adobe Flash CC/AIR3.8/lib/aot/stub/libsqlite3.dylib"; sourceTree = "<group>"; };
 		EA26EC7F1BAE29DE0048DD00 /* Findy-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Findy-Bridging-Header.h"; path = "FindyUITests/Findy-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
-		EA26EC801BAE2A6F0048DD00 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Findy/Bolts.framework; sourceTree = "<group>"; };
-		EA26EC811BAE2A6F0048DD00 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Findy/Parse.framework; sourceTree = "<group>"; };
-		EA26EC821BAE2A6F0048DD00 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = Findy/ParseCrashReporting.framework; sourceTree = "<group>"; };
-		EA26EC831BAE2A6F0048DD00 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = Findy/ParseFacebookUtils.framework; sourceTree = "<group>"; };
-		EA26EC841BAE2A6F0048DD00 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = Findy/ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
-		EA26EC851BAE2A6F0048DD00 /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseTwitterUtils.framework; path = Findy/ParseTwitterUtils.framework; sourceTree = "<group>"; };
-		EA26EC861BAE2A6F0048DD00 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = Findy/ParseUI.framework; sourceTree = "<group>"; };
+		EA26ED201BAE4A190048DD00 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		EA26ED221BAE4A260048DD00 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		EA26ED241BAE4A2C0048DD00 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		EA26ED261BAE4A350048DD00 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		EA26ED281BAE4A3C0048DD00 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		EA26ED2A1BAE4A410048DD00 /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseTwitterUtils.framework; sourceTree = "<group>"; };
+		EA26ED2C1BAE4A480048DD00 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		EA26ED2E1BAE4AB60048DD00 /* login_facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_facebook.png; sourceTree = "<group>"; };
+		EA26ED2F1BAE4AB60048DD00 /* login_facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_facebook@2x.png"; sourceTree = "<group>"; };
+		EA26ED301BAE4AB60048DD00 /* login_twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_twitter.png; sourceTree = "<group>"; };
+		EA26ED311BAE4AB60048DD00 /* login_twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_twitter@2x.png"; sourceTree = "<group>"; };
+		EA26ED361BAE4ACC0048DD00 /* hangers.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hangers.jpeg; sourceTree = "<group>"; };
+		EA26ED371BAE4ACC0048DD00 /* login_register.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_register.png; sourceTree = "<group>"; };
+		EA26ED381BAE4ACC0048DD00 /* login_register@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_register@2x.png"; sourceTree = "<group>"; };
 		EADD3FDE1BADA99500BC3EF6 /* Findy-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Findy-Bridging-Header.h"; path = "../Findy-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,25 +117,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA26EC8D1BAE2A6F0048DD00 /* ParseUI.framework in Frameworks */,
+				EA26ED211BAE4A190048DD00 /* Bolts.framework in Frameworks */,
+				EA26ED2D1BAE4A480048DD00 /* ParseUI.framework in Frameworks */,
 				EA26EC701BAE28400048DD00 /* libsqlite3.dylib in Frameworks */,
 				EA26EC6E1BAE28300048DD00 /* libz.dylib in Frameworks */,
 				EA26EC6C1BAE28190048DD00 /* SystemConfiguration.framework in Frameworks */,
-				EA26EC871BAE2A6F0048DD00 /* Bolts.framework in Frameworks */,
 				EA26EC6A1BAE28110048DD00 /* StoreKit.framework in Frameworks */,
-				EA26EC891BAE2A6F0048DD00 /* ParseCrashReporting.framework in Frameworks */,
 				EA26EC681BAE28090048DD00 /* Security.framework in Frameworks */,
-				EA26EC881BAE2A6F0048DD00 /* Parse.framework in Frameworks */,
-				EA26EC8A1BAE2A6F0048DD00 /* ParseFacebookUtils.framework in Frameworks */,
 				EA26EC661BAE28030048DD00 /* QuartzCore.framework in Frameworks */,
-				EA26EC8B1BAE2A6F0048DD00 /* ParseFacebookUtilsV4.framework in Frameworks */,
 				EA26EC641BAE27FC0048DD00 /* CoreLocation.framework in Frameworks */,
+				EA26ED231BAE4A260048DD00 /* Parse.framework in Frameworks */,
 				EA26EC621BAE27F40048DD00 /* CoreGraphics.framework in Frameworks */,
+				EA26ED291BAE4A3C0048DD00 /* ParseFacebookUtilsV4.framework in Frameworks */,
 				EA26EC601BAE27EA0048DD00 /* CFNetwork.framework in Frameworks */,
-				EA26EC8C1BAE2A6F0048DD00 /* ParseTwitterUtils.framework in Frameworks */,
+				EA26ED271BAE4A350048DD00 /* ParseFacebookUtils.framework in Frameworks */,
 				EA26EC5E1BAE27CA0048DD00 /* AudioToolbox.framework in Frameworks */,
+				EA26ED251BAE4A2C0048DD00 /* ParseCrashReporting.framework in Frameworks */,
+				EA26ED2B1BAE4A410048DD00 /* ParseTwitterUtils.framework in Frameworks */,
 				1D368D9E1BAD8E2B00EACFC8 /* MapKit.framework in Frameworks */,
-				E8C4084DE38B09DF3AA1906A /* libPods-Findy.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,13 +160,13 @@
 			children = (
 				EA26EC6F1BAE28400048DD00 /* libsqlite3.dylib */,
 				EA26EC6D1BAE28300048DD00 /* libz.dylib */,
-				EA26EC801BAE2A6F0048DD00 /* Bolts.framework */,
-				EA26EC811BAE2A6F0048DD00 /* Parse.framework */,
-				EA26EC821BAE2A6F0048DD00 /* ParseCrashReporting.framework */,
-				EA26EC831BAE2A6F0048DD00 /* ParseFacebookUtils.framework */,
-				EA26EC841BAE2A6F0048DD00 /* ParseFacebookUtilsV4.framework */,
-				EA26EC851BAE2A6F0048DD00 /* ParseTwitterUtils.framework */,
-				EA26EC861BAE2A6F0048DD00 /* ParseUI.framework */,
+				EA26ED2C1BAE4A480048DD00 /* ParseUI.framework */,
+				EA26ED2A1BAE4A410048DD00 /* ParseTwitterUtils.framework */,
+				EA26ED281BAE4A3C0048DD00 /* ParseFacebookUtilsV4.framework */,
+				EA26ED261BAE4A350048DD00 /* ParseFacebookUtils.framework */,
+				EA26ED241BAE4A2C0048DD00 /* ParseCrashReporting.framework */,
+				EA26ED221BAE4A260048DD00 /* Parse.framework */,
+				EA26ED201BAE4A190048DD00 /* Bolts.framework */,
 				EA26EC6B1BAE28190048DD00 /* SystemConfiguration.framework */,
 				EA26EC691BAE28110048DD00 /* StoreKit.framework */,
 				EA26EC671BAE28090048DD00 /* Security.framework */,
@@ -167,18 +176,8 @@
 				EA26EC5F1BAE27EA0048DD00 /* CFNetwork.framework */,
 				EA26EC5D1BAE27CA0048DD00 /* AudioToolbox.framework */,
 				1D368D9D1BAD8E2B00EACFC8 /* MapKit.framework */,
-				C83F7B7939D2440183984830 /* libPods-Findy.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3F5FFFBA588E203D1847C936 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A5A967A774F0E1E58CD62485 /* Pods-Findy.debug.xcconfig */,
-				A0C2352882B6837B9E30266F /* Pods-Findy.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		4B9FA6791BAD4887009BD71C = {
@@ -189,7 +188,6 @@
 				4B9FA6A41BAD4887009BD71C /* FindyUITests */,
 				4B9FA6831BAD4887009BD71C /* Products */,
 				2CDA56F405C58E432B7191D2 /* Frameworks */,
-				3F5FFFBA588E203D1847C936 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -211,6 +209,13 @@
 				4B9FA6851BAD4887009BD71C /* AppDelegate.swift */,
 				4B9FA6871BAD4887009BD71C /* ViewController.swift */,
 				1D1B57131BADABD70039DD42 /* Main.storyboard */,
+				EA26ED361BAE4ACC0048DD00 /* hangers.jpeg */,
+				EA26ED371BAE4ACC0048DD00 /* login_register.png */,
+				EA26ED381BAE4ACC0048DD00 /* login_register@2x.png */,
+				EA26ED2E1BAE4AB60048DD00 /* login_facebook.png */,
+				EA26ED2F1BAE4AB60048DD00 /* login_facebook@2x.png */,
+				EA26ED301BAE4AB60048DD00 /* login_twitter.png */,
+				EA26ED311BAE4AB60048DD00 /* login_twitter@2x.png */,
 				1D239A261BAE2390007963A5 /* CustomMKPin.xib */,
 				4B9FA68E1BAD4887009BD71C /* LaunchScreen.storyboard */,
 				4B9FA68C1BAD4887009BD71C /* Assets.xcassets */,
@@ -258,11 +263,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B9FA6AA1BAD4887009BD71C /* Build configuration list for PBXNativeTarget "Findy" */;
 			buildPhases = (
-				7F2CA8494746BC4F05E55B93 /* Check Pods Manifest.lock */,
 				4B9FA67E1BAD4887009BD71C /* Sources */,
 				4B9FA67F1BAD4887009BD71C /* Frameworks */,
 				4B9FA6801BAD4887009BD71C /* Resources */,
-				3CA9F7F4ECA6E4980C41931B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -363,10 +366,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA26ED331BAE4AB60048DD00 /* login_facebook@2x.png in Resources */,
 				4B9FA6901BAD4887009BD71C /* LaunchScreen.storyboard in Resources */,
+				EA26ED3B1BAE4ACC0048DD00 /* login_register@2x.png in Resources */,
+				EA26ED3A1BAE4ACC0048DD00 /* login_register.png in Resources */,
 				1D1B57141BADABD70039DD42 /* Main.storyboard in Resources */,
+				EA26ED341BAE4AB60048DD00 /* login_twitter.png in Resources */,
+				EA26ED351BAE4AB60048DD00 /* login_twitter@2x.png in Resources */,
 				1D239A271BAE2390007963A5 /* CustomMKPin.xib in Resources */,
 				4B9FA68D1BAD4887009BD71C /* Assets.xcassets in Resources */,
+				EA26ED321BAE4AB60048DD00 /* login_facebook.png in Resources */,
+				EA26ED391BAE4ACC0048DD00 /* hangers.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,39 +395,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		3CA9F7F4ECA6E4980C41931B /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Findy/Pods-Findy-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7F2CA8494746BC4F05E55B93 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4B9FA67E1BAD4887009BD71C /* Sources */ = {
@@ -560,7 +537,6 @@
 		};
 		4B9FA6AB1BAD4887009BD71C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5A967A774F0E1E58CD62485 /* Pods-Findy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -569,6 +545,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Findy",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Findy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
@@ -576,13 +553,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = FindyTeam.Findy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Findy/Findy-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Findy/Findy-Bridging-Header";
 			};
 			name = Debug;
 		};
 		4B9FA6AC1BAD4887009BD71C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0C2352882B6837B9E30266F /* Pods-Findy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -591,6 +567,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Findy",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Findy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
@@ -598,7 +575,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = FindyTeam.Findy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Findy/Findy-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Findy/Findy-Bridging-Header";
 			};
 			name = Release;
 		};
