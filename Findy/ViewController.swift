@@ -14,24 +14,29 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
     let locationManager: CLLocationManager = CLLocationManager() // the object that provides us the location data
     var userLocation: CLLocation!
     
+    @IBOutlet weak var toolBar: UIToolbar!
     @IBOutlet weak var mapView: MKMapView!
 //    @IBOutlet weak var mapView: GMSMapView!
-    @IBOutlet weak var toolBar: UIToolbar!
     var searchController:UISearchController!
     var searchResultsTableViewController:UITableViewController!
     var storePins:[CustomPin] = []
-    
+    var profileView:UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
         mapView.showsUserLocation = true
 
         searchResultsTableViewController = UITableViewController()
+        searchResultsTableViewController.view.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.9)
         searchController = UISearchController(searchResultsController: searchResultsTableViewController)
-        
+        searchController.delegate = self
+        searchController.hidesNavigationBarDuringPresentation = false
         self.navigationItem.titleView = searchController.searchBar
         
-     
+        profileView = ProfileView.loadNib()
+        profileView.frame = CGRectMake(0, -150, UIScreen.mainScreen().bounds.width, 200)
+        self.view.addSubview(profileView)
+        
         delay (2) {
             self.getUserLocation(self)
         }
@@ -42,6 +47,23 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
         view.insertSubview(toolBar, atIndex: 1)
     }
 
+    
+    @IBAction func didClickProfile(sender: AnyObject) {
+        if self.profileView.frame.origin.y == -150
+        {
+        UIView.animateWithDuration(0.2, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+            self.profileView.frame = CGRectMake(0, 50, UIScreen.mainScreen().bounds.width, 150)
+
+            }, completion: nil)
+        }
+        else
+        {
+            UIView.animateWithDuration(0.2, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+                self.profileView.frame = CGRectMake(0, -150, UIScreen.mainScreen().bounds.width, 150)
+                
+                }, completion: nil)
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -49,31 +71,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
     
     @IBAction func tapOnGetLocation(sender: AnyObject){
         getUserLocation(self)
-//        mapView.setCenterCoordinate(mapView.userLocation.coordinate, animated: true)
     }
-//    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
-//        MKPinAnnotationView *annView=[[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"currentloc"];
-//        
-//        if([inStock isEqual:@"yes"]){
-//            annView.pinColor = MKPinAnnotationColorGreen;
-//        }
-//        if([inStock isEqual:@"no"]){
-//            annView.pinColor = MKPinAnnotationColorRed;
-//        }
-//        if([inStock isEqual:@"unknown"]){
-//            UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"greyPin.png"]];
-//            [annView addSubview:imageView];
-//        }
-//        annView.animatesDrop=TRUE;
-//        annView.canShowCallout = YES;
-//        annView.calloutOffset = CGPointMake(-5, 5);
-//        return annView;
-//        
-//        var pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "currentLoc")
-//        if
-//        
-        
-//    }
+
     func getUserLocation(sender: AnyObject) {
         locationManager.delegate = self // instantiate the CLLocationManager object
         
@@ -111,8 +110,27 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
         storePins.append(storePin)
         mapView.addAnnotation(storePin)
     }
+    
 }
-
+extension ViewController: UISearchControllerDelegate
+{
+    func willPresentSearchController(searchController: UISearchController) {
+        //caculate frame here 
+        let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.height
+        let navigationBarFrame = navigationController!.navigationBar.frame
+        let tableViewY = navigationBarFrame.height + statusBarHeight
+        let tableViewHeight = mapView.frame.height - navigationBarFrame.height  - toolBar.frame.height
+        
+        searchResultsTableViewController.tableView.frame = CGRectMake(0, tableViewY, navigationBarFrame.width, tableViewHeight)
+    }
+    override func viewWillLayoutSubviews() {
+    }
+    func presentSearchController(searchController: UISearchController) {
+    }
+    func didPresentSearchController(searchController: UISearchController) {
+    }
+    
+}
 
 class CustomPin: NSObject, MKAnnotation {
     let title: String?
@@ -133,4 +151,5 @@ class CustomPin: NSObject, MKAnnotation {
         return locationName
     }
 }
+
 

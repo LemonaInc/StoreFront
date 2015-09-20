@@ -3,6 +3,9 @@
 
 target 'Findy' do
 pod 'GoogleMaps'
+pod 'FontAwesomeKit/IonIcons'
+
+
 end
 
 target 'FindyTests' do

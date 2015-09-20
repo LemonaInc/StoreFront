@@ -46,11 +46,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Put search bar here" id="2FH-RS-XRr">
-                        <barButtonItem key="leftBarButtonItem" image="profile" id="wvz-fF-5Tx"/>
+                        <barButtonItem key="leftBarButtonItem" image="profile" id="wvz-fF-5Tx">
+                            <connections>
+                                <action selector="didClickProfile:" destination="esr-F2-uer" id="iYG-nZ-k46"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="kJ7-D5-pBF" id="cQS-Kg-RFH"/>
-                        <outlet property="toolBar" destination="7Si-Js-YJA" id="sus-BL-3bH"/>
+                        <outlet property="toolBar" destination="7Si-Js-YJA" id="Bmi-AF-kLA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SH7-8B-Oyt" userLabel="First Responder" sceneMemberID="firstResponder"/>

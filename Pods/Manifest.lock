@@ -1,10 +1,15 @@
 PODS:
+  - FontAwesomeKit/Core (2.2.0)
+  - FontAwesomeKit/IonIcons (2.2.0):
+    - FontAwesomeKit/Core
   - GoogleMaps (1.10.2)
 
 DEPENDENCIES:
+  - FontAwesomeKit/IonIcons
   - GoogleMaps
 
 SPEC CHECKSUMS:
+  FontAwesomeKit: 025fd4dd1017fe4e3f8d47b03e024deedbb33cd4
   GoogleMaps: 5c92e599b07b0a2a9b367c5dd128edc629bddfea
 
 COCOAPODS: 0.38.2

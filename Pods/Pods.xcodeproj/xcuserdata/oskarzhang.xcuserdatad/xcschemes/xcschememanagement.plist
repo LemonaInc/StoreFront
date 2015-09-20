@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FontAwesomeKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Findy.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -12,7 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1830B233CECD74E833756DD3A60FFE2C</key>
+		<key>32F793F1438075D4008B96E1B9A9FBCF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA8B8D4F87EFC037064F08AEBB6EF370</key>
 		<dict>
 			<key>primary</key>
 			<true/>

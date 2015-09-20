@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "01FAFCD3063CF84BDA3E77EDCFE88296A7E4E3CE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "44D9568C1CB002A0511268A1570C3D8ECB16A1BA" : 0,
+    "01FAFCD3063CF84BDA3E77EDCFE88296A7E4E3CE" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "975822A8-49AE-44F0-B965-7441DFCCED3F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "44D9568C1CB002A0511268A1570C3D8ECB16A1BA" : "Findy",
+    "01FAFCD3063CF84BDA3E77EDCFE88296A7E4E3CE" : "StoreFront\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Findy",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Findy.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/LemonaInc\/StoreFront.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "01FAFCD3063CF84BDA3E77EDCFE88296A7E4E3CE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/OskarZhang\/Findy.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "44D9568C1CB002A0511268A1570C3D8ECB16A1BA"
+    }
+  ]
+}

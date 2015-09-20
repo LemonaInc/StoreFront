@@ -21,6 +21,9 @@
 		4BBCB3F81BADFDA000A58FD9 /* SiteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCB3EF1BADFDA000A58FD9 /* SiteDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
 		4BBCB3F91BADFDA000A58FD9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCB3F11BADFDA000A58FD9 /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
 		4BBCB3FB1BADFDA000A58FD9 /* hangers.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4BBCB3F41BADFDA000A58FD9 /* hangers.jpeg */; settings = {ASSET_TAGS = (); }; };
+		4BBCB3FD1BAE1F7200A58FD9 /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BBCB3FC1BAE1F7200A58FD9 /* ProfileView.xib */; settings = {ASSET_TAGS = (); }; };
+		4BBCB4011BAE215300A58FD9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCB4001BAE215300A58FD9 /* ProfileView.swift */; settings = {ASSET_TAGS = (); }; };
+		4BBCB4031BAE2DD900A58FD9 /* snoop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BBCB4021BAE2DD900A58FD9 /* snoop.jpg */; settings = {ASSET_TAGS = (); }; };
 		BDECD4278840E9D6B4420B1A /* libPods-Findy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D272E6127A39DAB214D3D406 /* libPods-Findy.a */; };
 		EA4C77BD1BAD5686003B5147 /* ItemList.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77B61BAD5686003B5147 /* ItemList.xib */; };
 		EA4C77BE1BAD5686003B5147 /* MyOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C77B71BAD5686003B5147 /* MyOrderCell.xib */; };
@@ -75,6 +78,9 @@
 		4BBCB3F01BADFDA000A58FD9 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		4BBCB3F11BADFDA000A58FD9 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		4BBCB3F41BADFDA000A58FD9 /* hangers.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hangers.jpeg; sourceTree = "<group>"; };
+		4BBCB3FC1BAE1F7200A58FD9 /* ProfileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
+		4BBCB4001BAE215300A58FD9 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		4BBCB4021BAE2DD900A58FD9 /* snoop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = snoop.jpg; sourceTree = "<group>"; };
 		CED6CC7CC462EC5D98C67496 /* Pods-Findy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Findy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Findy/Pods-Findy.debug.xcconfig"; sourceTree = "<group>"; };
 		D272E6127A39DAB214D3D406 /* libPods-Findy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Findy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4C77B61BAD5686003B5147 /* ItemList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemList.xib; sourceTree = "<group>"; };
@@ -153,11 +159,14 @@
 				4BBCB3E91BADFDA000A58FD9 /* Login */,
 				4B9FA6851BAD4887009BD71C /* AppDelegate.swift */,
 				4B9FA6871BAD4887009BD71C /* ViewController.swift */,
+				4BBCB4021BAE2DD900A58FD9 /* snoop.jpg */,
 				EA4C77B51BAD566D003B5147 /* Objective C Files */,
 				4B9FA68C1BAD4887009BD71C /* Assets.xcassets */,
 				4B9FA68E1BAD4887009BD71C /* LaunchScreen.storyboard */,
 				4B9FA6911BAD4887009BD71C /* Info.plist */,
 				1D1B57131BADABD70039DD42 /* Main.storyboard */,
+				4BBCB3FC1BAE1F7200A58FD9 /* ProfileView.xib */,
+				4BBCB4001BAE215300A58FD9 /* ProfileView.swift */,
 			);
 			path = Findy;
 			sourceTree = "<group>";
@@ -343,9 +352,11 @@
 				EA4C77BD1BAD5686003B5147 /* ItemList.xib in Resources */,
 				4BBCB3FB1BADFDA000A58FD9 /* hangers.jpeg in Resources */,
 				4BBCB3F51BADFDA000A58FD9 /* Locat.xib in Resources */,
+				4BBCB4031BAE2DD900A58FD9 /* snoop.jpg in Resources */,
 				EA4C77C01BAD5686003B5147 /* Single Item.xib in Resources */,
 				EA4C77C31BAD5686003B5147 /* Home.xib in Resources */,
 				EA4C77C51BAD5754003B5147 /* hangers.jpeg in Resources */,
+				4BBCB3FD1BAE1F7200A58FD9 /* ProfileView.xib in Resources */,
 				EA4C77C21BAD5686003B5147 /* OrderForm.xib in Resources */,
 				EA4C77C11BAD5686003B5147 /* MyOrder.xib in Resources */,
 				EA4C77BE1BAD5686003B5147 /* MyOrderCell.xib in Resources */,
@@ -410,6 +421,7 @@
 				4B9FA6881BAD4887009BD71C /* ViewController.swift in Sources */,
 				4B9FA6861BAD4887009BD71C /* AppDelegate.swift in Sources */,
 				4BBCB3F71BADFDA000A58FD9 /* ParentViewController.m in Sources */,
+				4BBCB4011BAE215300A58FD9 /* ProfileView.swift in Sources */,
 				4BBCB3F91BADFDA000A58FD9 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -554,6 +566,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = FindyTeam.Findy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Findy/Findy-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -571,6 +584,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = FindyTeam.Findy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Findy/Findy-Bridging-Header.h";
 			};
 			name = Release;
 		};
