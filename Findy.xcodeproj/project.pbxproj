@@ -553,6 +553,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = FindyTeam.Findy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Findy/Findy-Bridging-Header";
 			};
 			name = Debug;
 		};
@@ -574,6 +575,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = FindyTeam.Findy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Findy/Findy-Bridging-Header";
 			};
 			name = Release;
 		};
