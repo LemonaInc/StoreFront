@@ -2,9 +2,9 @@
 
 StoreFront is a simple iOS application that allows a user to find nearby products in thier area.
 
-# Developed at Hack The North in Waterloo Ontario.
+# Developed at Hack The North in Waterloo Ontario
 
-Build with Swift and Objective-C 
+Built with Swift and Objective-C 
 
 # Terms
 
@@ -24,8 +24,7 @@ is strickly prohibitedunless the following conditions are met:
 
 * All four members of StoreFront agree and allow you to redestribute and modify this software under a written contract with both parties (you) and (StoreFront) have a signed copy of that agreement. 
 
-
- * Neither the name StoreFront nor the names of its contributors may be used to
+* Neither the name StoreFront nor the names of its contributors may be used to
    endorse or promote products derived from this software without specific
    prior written permission.
 
